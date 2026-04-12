@@ -9,6 +9,10 @@
     - [Provider / 凭证配置](hermes/providers-and-credentials.md)
     - [Gateway 配置](hermes/gateway.md)
     - [配置文件与维护](hermes/config-files-and-maintenance.md)
+    - [平台接入与消息入口](hermes/platform-integrations.md)
+    - [Tools 与 MCP 配置](hermes/tools-and-mcp.md)
+    - [Profiles / 多实例管理](hermes/profiles.md)
+    - [常见故障排查](hermes/troubleshooting.md)
 
 ## 结构说明
 
@@ -18,8 +22,12 @@
 |---|---|---|
 | 提速配置 | 感觉 Hermes 回复慢、长会话变卡 | [提速配置](hermes/performance.md) |
 | Provider / 凭证配置 | 切换模型提供方、登录、排查 token / credential | [Provider / 凭证配置](hermes/providers-and-credentials.md) |
-| Gateway 配置 | 对接 Feishu / Telegram / Discord 等消息网关 | [Gateway 配置](hermes/gateway.md) |
+| Gateway 配置 | 管理 gateway 的运行、重启与平台配置入口 | [Gateway 配置](hermes/gateway.md) |
 | 配置文件与维护 | 找配置文件、检查配置、迁移配置 | [配置文件与维护](hermes/config-files-and-maintenance.md) |
+| 平台接入与消息入口 | 处理 Feishu / Telegram / Discord / Weixin 等平台接入 | [平台接入与消息入口](hermes/platform-integrations.md) |
+| Tools 与 MCP 配置 | 管理工具开关与外部 MCP server | [Tools 与 MCP 配置](hermes/tools-and-mcp.md) |
+| Profiles / 多实例管理 | 隔离不同 Hermes 实例与配置 | [Profiles / 多实例管理](hermes/profiles.md) |
+| 常见故障排查 | 快速排查状态、日志、doctor 与会话问题 | [常见故障排查](hermes/troubleshooting.md) |
 
 ## 快速开始
 
@@ -27,14 +35,12 @@
 
 1. 速度问题：先看 [提速配置](hermes/performance.md)
 2. 模型或 provider 问题：看 [Provider / 凭证配置](hermes/providers-and-credentials.md)
-3. 消息平台接入问题：看 [Gateway 配置](hermes/gateway.md)
-4. 配置文件位置或升级兼容问题：看 [配置文件与维护](hermes/config-files-and-maintenance.md)
+3. 消息平台接入问题：先看 [平台接入与消息入口](hermes/platform-integrations.md)，再看 [Gateway 配置](hermes/gateway.md)
+4. 工具或 MCP 问题：看 [Tools 与 MCP 配置](hermes/tools-and-mcp.md)
+5. 多实例隔离需求：看 [Profiles / 多实例管理](hermes/profiles.md)
+6. 配置文件位置或升级兼容问题：看 [配置文件与维护](hermes/config-files-and-maintenance.md)
+7. 不确定问题在哪：直接看 [常见故障排查](hermes/troubleshooting.md)
 
-## 后续扩展建议
+## 结构补充说明
 
-后续如果 Hermes 文档继续增加，可以继续按下面方向补充：
-
-- 平台接入实战（例如 Feishu / Telegram / Discord 分页）
-- MCP / tools 配置
-- profiles / multi-instance 管理
-- 常见故障排查
+现在 Hermes 文档已经从“单页记录”扩展成更完整的主题结构，后续更适合继续按专题增量维护，而不是把所有内容继续堆在一个页面里。

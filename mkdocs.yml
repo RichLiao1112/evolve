@@ -53,7 +53,11 @@ nav:
       - 提速配置: hermes/performance.md
       - Provider / 凭证配置: hermes/providers-and-credentials.md
       - Gateway 配置: hermes/gateway.md
+      - 平台接入与消息入口: hermes/platform-integrations.md
+      - Tools 与 MCP 配置: hermes/tools-and-mcp.md
+      - Profiles / 多实例管理: hermes/profiles.md
       - 配置文件与维护: hermes/config-files-and-maintenance.md
+      - 常见故障排查: hermes/troubleshooting.md
   - 报告:
       - reports/hermes-agent-self-evolution.md
       - reports/ai-site-optimization-loop.md
