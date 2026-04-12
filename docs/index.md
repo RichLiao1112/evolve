@@ -19,18 +19,18 @@ hide:
 </div>
 
 <div class="summary-strip">
-  <div>
-    <span>站点定位</span>
-    <strong>公开报告发布</strong>
-  </div>
-  <div>
-    <span>阅读方式</span>
-    <strong>摘要 + 链接</strong>
-  </div>
-  <div>
-    <span>发布方式</span>
-    <strong>Markdown → GitHub → Pages</strong>
-  </div>
+ <div>
+  <span>定位</span>
+  <strong>公开技术分享</strong>
+ </div>
+ <div>
+  <span>内容</span>
+  <strong>项目 · 方案 · 笔记</strong>
+ </div>
+ <div>
+  <span>形式</span>
+  <strong>链接沉淀</strong>
+ </div>
 </div>
 
 ## 最新报告 { #latest-reports }
@@ -80,11 +80,4 @@ hide:
   </div>
 </div>
 
-## 发布节奏
 
-1. 本地编写 Markdown。
-2. 推送到 GitHub 仓库。
-3. GitHub Actions 自动发布到 `evolve.liveppp.com`。
-4. 对外渠道默认发送：**摘要 + evolve 链接**。
-
-> 长内容放站点，群里只发摘要和入口，这样传播更轻、沉淀更稳。
