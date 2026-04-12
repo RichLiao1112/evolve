@@ -15,12 +15,36 @@
 }
 
 .hero-eyebrow {
-  margin: 0 0 0.75rem;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--evolve-primary);
+ margin: 0 0 0.75rem;
+ font-size: 0.78rem;
+ font-weight: 700;
+ letter-spacing: 0.12em;
+ text-transform: uppercase;
+ color: var(--evolve-primary);
+}
+
+.hero-logo {
+ display: flex;
+ justify-content: center;
+ margin: 0 0 1rem;
+}
+
+.hero-logo img {
+ max-width: 180px;
+ height: auto;
+ border-radius: 1rem;
+ box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+ transition: transform 0.3s ease;
+}
+
+.hero-logo img:hover {
+ transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+ .hero-logo img {
+  max-width: 140px;
+ }
 }
 
 .hero-panel h1 {
