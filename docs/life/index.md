@@ -15,6 +15,21 @@
 !!! abstract "怎么阅读这个板块"
     如果你只是想先找一个适合自己的入口，先看下面的阅读地图；如果你想把这些内容串起来使用，建议先看《生活系统总纲》，再按自己的方向往下读。
 
+<div class="sponsor-block sponsor-block--life sponsor-block--muted">
+  <div class="sponsor-block__eyebrow">Life Sponsor Slot</div>
+  <h3>生活板块合作位 · 更适合设备、服务与创作者工具</h3>
+  <p>这一类页面更适合展示与记录、通勤、相机、创作、效率工具、轻量生活方式相关的合作信息。整体会优先保持像内容推荐卡，而不是强打扰广告。</p>
+  <div class="sponsor-block__chips">
+    <span>生活板块版</span>
+    <span>相机 / 创作 / 效率</span>
+    <span>阅读体验优先</span>
+  </div>
+  <div class="sponsor-block__actions">
+    <a href="../site-info/contact/">咨询合作位</a>
+    <a href="../site-info/about/">了解站点定位</a>
+  </div>
+</div>
+
 ## 阅读地图
 
 | 如果你现在更关心 | 建议先读 |

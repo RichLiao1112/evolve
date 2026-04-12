@@ -4,6 +4,21 @@
 
 采集 → 分析 → 生成方案 → 自动改代码 → 自动测试 → 灰度上线 → 观察结果 → 继续下一轮
 
+<div class="sponsor-block sponsor-block--report sponsor-block--muted">
+  <div class="sponsor-block__eyebrow">Report Sponsor Slot</div>
+  <h3>报告页合作位 · 更适合开发工具、数据平台与自动化服务</h3>
+  <p>报告页会优先承载与分析、监控、开发效率、AI 基础设施或自动化工作流相关的合作支持信息，尽量保持专业感和页面一致性。</p>
+  <div class="sponsor-block__chips">
+    <span>报告页版</span>
+    <span>B2B / 工具型</span>
+    <span>专业语境</span>
+  </div>
+  <div class="sponsor-block__actions">
+    <a href="../site-info/contact/">咨询报告页合作</a>
+    <a href="../site-info/disclaimer/">查看合作说明</a>
+  </div>
+</div>
+
 ## 1. 数据采集层
 
 需要先让网站可以被持续观察：

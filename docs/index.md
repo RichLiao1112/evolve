@@ -83,3 +83,26 @@ hide:
     </div>
   </a>
 </div>
+
+<div class="sponsor-block sponsor-block--home">
+  <div class="sponsor-block__eyebrow">Support Evolve</div>
+  <h3>首页赞助位 · 适合做低打扰的长期合作展示</h3>
+  <p>如果你的产品、工具或服务和 AI Agent、自动化、创作工具、知识管理或长期内容沉淀相关，这里可以作为首页级合作支持位。它更像一张内容卡，而不是打断阅读的广告横幅。</p>
+  <div class="sponsor-block__chips">
+    <span>首页版</span>
+    <span>低干扰</span>
+    <span>内容相关优先</span>
+  </div>
+  <div class="sponsor-block__actions">
+    <a href="site-info/contact/">申请赞助 / 合作支持</a>
+    <a href="site-info/disclaimer/">查看展示原则</a>
+  </div>
+  <div class="sponsor-note">说明：当前为站点赞助位样式示例。正式合作展示会尽量保持与内容主题相关，并做清晰标识。</div>
+</div>
+
+<div class="site-links-inline">
+  <a href="site-info/about/">关于</a>
+  <a href="site-info/privacy-policy/">隐私政策</a>
+  <a href="site-info/contact/">联系方式</a>
+  <a href="site-info/disclaimer/">免责声明</a>
+</div>
