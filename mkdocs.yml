@@ -8,7 +8,6 @@ copyright: Copyright © 2026 RichLiao1112
 theme:
   name: material
   language: zh
-  logo: assets/images/logo-nav.png
   icon:
     repo: fontawesome/brands/github
   features:
