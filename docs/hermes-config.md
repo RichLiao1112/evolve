@@ -1,88 +1,40 @@
-# Hermes 配置记录
+# Hermes 配置总览
 
-这个文档用于统一记录 Hermes 相关的常用配置、调优项和维护备注，后续有新的 Hermes 设置也继续补在这里。
+这个文档作为 Hermes 配置的总入口，用来汇总常见配置主题，并把内容拆分成更易维护的结构化页面。
 
-## 响应速度优化
+!!! abstract "阅读地图"
+    按主题查看：
 
-如果感觉 Hermes 回复偏慢，优先检查和调整下面这些配置。
+    - [提速配置](hermes/performance.md)
+    - [Provider / 凭证配置](hermes/providers-and-credentials.md)
+    - [Gateway 配置](hermes/gateway.md)
+    - [配置文件与维护](hermes/config-files-and-maintenance.md)
 
-### 1. 降低 reasoning 强度
+## 结构说明
 
-当前最影响响应速度的配置之一是 `agent.reasoning_effort`。
+为了避免把所有内容都堆在一个长页面里，Hermes 文档现在按主题拆成四类：
 
-推荐优先尝试：
+| 模块 | 适合什么时候看 | 页面 |
+|---|---|---|
+| 提速配置 | 感觉 Hermes 回复慢、长会话变卡 | [提速配置](hermes/performance.md) |
+| Provider / 凭证配置 | 切换模型提供方、登录、排查 token / credential | [Provider / 凭证配置](hermes/providers-and-credentials.md) |
+| Gateway 配置 | 对接 Feishu / Telegram / Discord 等消息网关 | [Gateway 配置](hermes/gateway.md) |
+| 配置文件与维护 | 找配置文件、检查配置、迁移配置 | [配置文件与维护](hermes/config-files-and-maintenance.md) |
 
-```bash
-hermes config set agent.reasoning_effort minimal
-```
+## 快速开始
 
-如果更追求速度，也可以进一步改成：
+如果你只是想快速排查，建议按这个顺序：
 
-```bash
-hermes config set agent.reasoning_effort none
-```
+1. 速度问题：先看 [提速配置](hermes/performance.md)
+2. 模型或 provider 问题：看 [Provider / 凭证配置](hermes/providers-and-credentials.md)
+3. 消息平台接入问题：看 [Gateway 配置](hermes/gateway.md)
+4. 配置文件位置或升级兼容问题：看 [配置文件与维护](hermes/config-files-and-maintenance.md)
 
-说明：
-- `minimal`：通常是速度和质量的较好平衡
-- `none`：更快，但复杂问题的回答质量可能下降
+## 后续扩展建议
 
-### 2. 关闭 tool progress 过程播报
+后续如果 Hermes 文档继续增加，可以继续按下面方向补充：
 
-如果不需要在界面里持续看到工具执行过程，可以关闭：
-
-```bash
-hermes config set display.tool_progress off
-```
-
-说明：
-- 这个配置主要改善使用体感和界面噪音
-- 对模型实际推理耗时帮助不如 reasoning 配置明显，但通常也值得一起调整
-
-### 3. 提前压缩长上下文
-
-如果是“会话越聊越慢”，可以降低压缩阈值：
-
-```bash
-hermes config set compression.threshold 0.6
-```
-
-说明：
-- 当前阈值过高时，长会话会携带更多历史上下文
-- 降低阈值后，Hermes 会更早做上下文压缩，从而减少后续请求负担
-
-## 推荐组合
-
-日常使用可以先试这一组：
-
-```bash
-hermes config set agent.reasoning_effort minimal
-hermes config set display.tool_progress off
-hermes config set compression.threshold 0.6
-```
-
-## 模型层面的提速
-
-如果做完上面几项还是觉得慢，可以进一步考虑：
-
-```bash
-hermes model
-```
-
-切换到更快的模型，通常会比单纯调显示项更有效。
-
-## 修改后生效建议
-
-如果当前是通过 gateway / Feishu / Telegram 等方式使用 Hermes，改完配置后建议重启服务：
-
-```bash
-hermes gateway restart
-```
-
-如果只是本地 CLI，也可以直接开启新会话验证效果。
-
-## 当前已记录的提速结论
-
-- 优先改 `agent.reasoning_effort`
-- 其次可关掉 `display.tool_progress`
-- 长会话场景下可把 `compression.threshold` 调低
-- 如果还嫌慢，优先换更快模型
+- 平台接入实战（例如 Feishu / Telegram / Discord 分页）
+- MCP / tools 配置
+- profiles / multi-instance 管理
+- 常见故障排查
