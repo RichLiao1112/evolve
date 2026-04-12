@@ -21,9 +21,13 @@ theme:
       primary: blue grey
       accent: indigo
 
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
   - def_list
   - footnotes
   - tables
@@ -43,6 +47,6 @@ plugins:
 
 nav:
   - 首页: index.md
-  - Reports:
+  - 报告:
       - Hermes Agent Self-Evolution: reports/hermes-agent-self-evolution.md
       - AI 持续优化网站闭环方案: reports/ai-site-optimization-loop.md

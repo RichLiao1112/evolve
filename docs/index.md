@@ -1,23 +1,87 @@
-# evolve
+---
+hide:
+  - toc
+---
 
-这里是公开分享站，专门放适合外部传播的内容。
+<div class="hero-panel">
+  <p class="hero-eyebrow">Public reports · technical notes · research snapshots</p>
+  <h1>evolve</h1>
+  <p class="hero-lead">
+    一个适合外部传播的公开发布站，专门承载项目总结、技术方案、研究笔记与 AI 生成的可分享内容。
+  </p>
+  <div class="hero-actions">
+    <a class="md-button md-button--primary" href="#latest-reports">查看最新报告</a>
+    <a class="md-button" href="https://github.com/RichLiao1112/evolve" target="_blank" rel="noopener">访问 GitHub 仓库</a>
+  </div>
+</div>
 
-## 内容类型
+<div class="summary-strip">
+  <div>
+    <span>站点定位</span>
+    <strong>公开报告发布</strong>
+  </div>
+  <div>
+    <span>阅读方式</span>
+    <strong>摘要 + 链接</strong>
+  </div>
+  <div>
+    <span>发布方式</span>
+    <strong>Markdown → GitHub → Pages</strong>
+  </div>
+</div>
 
-- 项目总结
-- 技术方案
-- 架构设计
-- 调研报告
-- 操作指南
+## 最新报告 { #latest-reports }
 
-## 当前内容
+<div class="report-grid">
+  <a class="report-card" href="reports/hermes-agent-self-evolution/">
+    <div class="report-card__meta">项目总结 · AI Agent</div>
+    <h3>Hermes Agent Self-Evolution 项目总结</h3>
+    <p>梳理 AI Agent 自我改进系统的五阶段进化闭环，覆盖技能、工具、提示词、代码与监控。</p>
+    <div class="report-card__tags">
+      <span>DSPy</span>
+      <span>GEPA</span>
+      <span>LLM-as-a-Judge</span>
+    </div>
+  </a>
 
-- [Hermes Agent Self-Evolution 项目总结](reports/hermes-agent-self-evolution.md)
-- [AI 持续优化网站闭环方案](reports/ai-site-optimization-loop.md)
+  <a class="report-card" href="reports/ai-site-optimization-loop/">
+    <div class="report-card__meta">方案设计 · 网站增长</div>
+    <h3>AI 持续优化网站闭环方案</h3>
+    <p>从数据采集、AI 分析、自动改代码到灰度上线，搭建一个可持续运行的网站优化闭环。</p>
+    <div class="report-card__tags">
+      <span>PostHog</span>
+      <span>Sentry</span>
+      <span>Playwright</span>
+    </div>
+  </a>
+</div>
 
-## 发布策略
+## 这个站适合发什么
 
-- 本地编辑 Markdown
-- Git 提交到 GitHub 仓库
-- GitHub Actions 自动发布到 GitHub Pages
-- 绑定自定义域名 `evolve.liveppp.com`
+<div class="topic-grid">
+  <div class="topic-card">
+    <h3>项目总结</h3>
+    <p>把一个项目的背景、方法、关键结果和可复用经验整理成可外发的文档。</p>
+  </div>
+  <div class="topic-card">
+    <h3>技术方案</h3>
+    <p>适合沉淀架构设计、自动化流程、部署策略和系统演进方向。</p>
+  </div>
+  <div class="topic-card">
+    <h3>研究笔记</h3>
+    <p>适合发布模型研究、工具评估、方案对比和阶段性洞察。</p>
+  </div>
+  <div class="topic-card">
+    <h3>公开分享内容</h3>
+    <p>适合从长文中抽出一版“可对外传播”的版本，用于群分享和沉淀链接资产。</p>
+  </div>
+</div>
+
+## 发布节奏
+
+1. 本地编写 Markdown。
+2. 推送到 GitHub 仓库。
+3. GitHub Actions 自动发布到 `evolve.liveppp.com`。
+4. 对外渠道默认发送：**摘要 + evolve 链接**。
+
+> 长内容放站点，群里只发摘要和入口，这样传播更轻、沉淀更稳。
