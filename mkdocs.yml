@@ -50,6 +50,7 @@ plugins:
 nav:
   - Hermes:
       - 总览: hermes-config.md
+      - 命令速查: hermes/command-cheatsheet.md
       - 提速配置: hermes/performance.md
       - Provider / 凭证配置: hermes/providers-and-credentials.md
       - Gateway 配置: hermes/gateway.md

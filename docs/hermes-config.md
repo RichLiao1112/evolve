@@ -5,6 +5,7 @@
 !!! abstract "阅读地图"
     按主题查看：
 
+    - [命令速查](hermes/command-cheatsheet.md)
     - [提速配置](hermes/performance.md)
     - [Provider / 凭证配置](hermes/providers-and-credentials.md)
     - [Gateway 配置](hermes/gateway.md)
@@ -20,6 +21,7 @@
 
 | 模块 | 适合什么时候看 | 页面 |
 |---|---|---|
+| 命令速查 | 想快速找命令、不想翻长文 | [命令速查](hermes/command-cheatsheet.md) |
 | 提速配置 | 感觉 Hermes 回复慢、长会话变卡 | [提速配置](hermes/performance.md) |
 | Provider / 凭证配置 | 切换模型提供方、登录、排查 token / credential | [Provider / 凭证配置](hermes/providers-and-credentials.md) |
 | Gateway 配置 | 管理 gateway 的运行、重启与平台配置入口 | [Gateway 配置](hermes/gateway.md) |
@@ -33,13 +35,14 @@
 
 如果你只是想快速排查，建议按这个顺序：
 
-1. 速度问题：先看 [提速配置](hermes/performance.md)
-2. 模型或 provider 问题：看 [Provider / 凭证配置](hermes/providers-and-credentials.md)
-3. 消息平台接入问题：先看 [平台接入与消息入口](hermes/platform-integrations.md)，再看 [Gateway 配置](hermes/gateway.md)
-4. 工具或 MCP 问题：看 [Tools 与 MCP 配置](hermes/tools-and-mcp.md)
-5. 多实例隔离需求：看 [Profiles / 多实例管理](hermes/profiles.md)
-6. 配置文件位置或升级兼容问题：看 [配置文件与维护](hermes/config-files-and-maintenance.md)
-7. 不确定问题在哪：直接看 [常见故障排查](hermes/troubleshooting.md)
+1. 先想快速找命令：看 [命令速查](hermes/command-cheatsheet.md)
+2. 速度问题：再看 [提速配置](hermes/performance.md)
+3. 模型或 provider 问题：看 [Provider / 凭证配置](hermes/providers-and-credentials.md)
+4. 消息平台接入问题：先看 [平台接入与消息入口](hermes/platform-integrations.md)，再看 [Gateway 配置](hermes/gateway.md)
+5. 工具或 MCP 问题：看 [Tools 与 MCP 配置](hermes/tools-and-mcp.md)
+6. 多实例隔离需求：看 [Profiles / 多实例管理](hermes/profiles.md)
+7. 配置文件位置或升级兼容问题：看 [配置文件与维护](hermes/config-files-and-maintenance.md)
+8. 不确定问题在哪：直接看 [常见故障排查](hermes/troubleshooting.md)
 
 ## 结构补充说明
 
