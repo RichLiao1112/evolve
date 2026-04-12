@@ -3,36 +3,6 @@ hide:
   - toc
 ---
 
-<div class="hero-panel">
- <p class="hero-eyebrow">Public reports · technical notes · research snapshots</p>
- <div class="hero-logo">
-  <img src="assets/images/evolve-logo.jpg" alt="Evolve Mascot">
- </div>
- <h1>Evolve</h1>
- <p class="hero-lead">
-  一个适合外部传播的公开发布站，专门承载项目总结、技术方案、研究笔记与 AI 生成的可分享内容。这里的项目标题统一使用 Evolve 风格展示。
- </p>
- <div class="hero-actions">
-  <a class="md-button md-button--primary" href="#latest-reports">查看最新报告</a>
-  <a class="md-button" href="https://github.com/RichLiao1112/evolve" target="_blank" rel="noopener">访问 GitHub 仓库</a>
- </div>
-</div>
-
-<div class="summary-strip">
- <div>
-  <span>定位</span>
-  <strong>公开技术分享</strong>
- </div>
- <div>
-  <span>内容</span>
-  <strong>项目 · 方案 · 笔记</strong>
- </div>
- <div>
-  <span>形式</span>
-  <strong>链接沉淀</strong>
- </div>
-</div>
-
 ## 最新报告 { #latest-reports }
 
 <div class="report-grid">
@@ -58,5 +28,3 @@ hide:
     </div>
   </a>
 </div>
-
-
