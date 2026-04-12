@@ -5,9 +5,9 @@ hide:
 
 <div class="hero-panel">
   <p class="hero-eyebrow">Public reports · technical notes · research snapshots</p>
-  <h1>evolve</h1>
+  <h1>Evolve</h1>
   <p class="hero-lead">
-    一个适合外部传播的公开发布站，专门承载项目总结、技术方案、研究笔记与 AI 生成的可分享内容。
+    一个适合外部传播的公开发布站，专门承载项目总结、技术方案、研究笔记与 AI 生成的可分享内容。这里的项目标题统一使用 Evolve 风格展示。
   </p>
   <div class="hero-actions">
     <a class="md-button md-button--primary" href="#latest-reports">查看最新报告</a>
@@ -36,7 +36,7 @@ hide:
   <a class="report-card" href="reports/hermes-agent-self-evolution/">
     <div class="report-card__meta">项目总结 · AI Agent</div>
     <h3>Hermes Agent Self-Evolution 项目总结</h3>
-    <p>梳理 AI Agent 自我改进系统的五阶段进化闭环，覆盖技能、工具、提示词、代码与监控。</p>
+    <p>重新解读这个项目：它不是在线自我改写的“活体 Agent”，而是一个面向 Hermes Agent 的离线优化与评测流水线。</p>
     <div class="report-card__tags">
       <span>DSPy</span>
       <span>GEPA</span>
