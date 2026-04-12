@@ -48,6 +48,8 @@ plugins:
   - search
 
 nav:
+  - Hermes:
+      - hermes-config.md
   - 报告:
       - reports/hermes-agent-self-evolution.md
       - reports/ai-site-optimization-loop.md
