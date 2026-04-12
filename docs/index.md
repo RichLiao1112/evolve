@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-## 最新报告 { #latest-reports }
+## 精选内容 { #featured-content }
 
 <div class="report-grid">
   <a class="report-card" href="reports/hermes-agent-self-evolution/">
