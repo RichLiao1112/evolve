@@ -38,4 +38,15 @@ hide:
       <span>生活</span>
     </div>
   </a>
+
+  <a class="report-card" href="life/30-minute-commute-life-recording/">
+    <div class="report-card__meta">生活 · 通勤系统</div>
+    <h3>每天单程 30 分钟开车通勤，怎么把它过得更值？</h3>
+    <p>用轻输入、晚间回顾和通勤声音日志，把每天固定的开车时间变成生活记录和状态整理的一部分。</p>
+    <div class="report-card__tags">
+      <span>通勤</span>
+      <span>生活记录</span>
+      <span>播客</span>
+    </div>
+  </a>
 </div>
