@@ -63,5 +63,12 @@ nav:
       - reports/hermes-agent-self-evolution.md
       - reports/ai-site-optimization-loop.md
   - 生活:
+      - 总览: life/index.md
+      - 生活系统总纲: life/life-system-overview.md
       - 相机利用指南: life/camera-maximize-value.md
       - 30 分钟通勤生活记录方案: life/30-minute-commute-life-recording.md
+      - 轻量个人生活记录系统: life/lightweight-life-recording-system.md
+      - 播客、语音备忘录与周记记录流: life/podcast-voice-notes-weekly-notes-flow.md
+      - 摄影学习型路线: life/camera-photography-learning-path.md
+      - 短视频创作型路线: life/camera-short-video-creation-path.md
+      - 副业变现型路线: life/camera-side-income-path.md
