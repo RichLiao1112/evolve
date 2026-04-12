@@ -6,10 +6,11 @@ repo_name: RichLiao1112
 copyright: Copyright © 2026 RichLiao1112
 
 theme:
-  name: material
-  language: zh
-  icon:
-    repo: fontawesome/brands/github
+ name: material
+ language: zh
+ logo: assets/images/logo-nav.png
+ icon:
+   repo: fontawesome/brands/github
   features:
     - navigation.instant
     - navigation.sections
