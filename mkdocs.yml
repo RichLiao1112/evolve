@@ -8,6 +8,8 @@ copyright: Copyright © 2026 RichLiao1112
 theme:
   name: material
   language: zh
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.instant
     - navigation.sections
