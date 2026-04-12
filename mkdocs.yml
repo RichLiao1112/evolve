@@ -6,11 +6,11 @@ repo_name: RichLiao1112
 copyright: Copyright © 2026 RichLiao1112
 
 theme:
- name: material
- language: zh
- logo: assets/images/logo-nav.png
- icon:
-   repo: fontawesome/brands/github
+  name: material
+  language: zh
+  logo: assets/images/logo-nav.png
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.instant
     - navigation.sections
@@ -49,7 +49,6 @@ plugins:
   - search
 
 nav:
-  - 首页: index.md
   - 报告:
-      - Hermes Agent Self-Evolution: reports/hermes-agent-self-evolution.md
-      - AI 持续优化网站闭环方案: reports/ai-site-optimization-loop.md
+      - reports/hermes-agent-self-evolution.md
+      - reports/ai-site-optimization-loop.md
