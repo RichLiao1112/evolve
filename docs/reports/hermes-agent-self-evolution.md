@@ -14,6 +14,11 @@
 
 > 它要解决的不是“Agent 会不会学习”，而是“Agent 的学习能不能被工程化、量化、审查和持续运行”。
 
+!!! abstract "阅读地图"
+    - 想快速看懂项目定位：优先看“这个项目到底在优化什么”“它不是 Hermes Agent 本体，而是外部优化器”。
+    - 想理解它的核心机制：重点看“进化闭环”“GEPA 为什么是这个项目的核心”“项目的完整结构，其实是一条 Agent DevOps 流水线”。
+    - 想看我的总体判断与边界：直接看“我对这个项目的最新判断”“风险与难点”“对 Hermes Agent 本身意味着什么”。
+
 ---
 
 ## 这个项目到底在优化什么
@@ -90,6 +95,14 @@ README 里给的主线是 DSPy + GEPA，PLAN 则把整体结构展开得更完�
 → 人工审核合并
 ```
 
+| 环节 | 主要输入 | 主要输出 | 关键治理点 |
+| --- | --- | --- | --- |
+| 目标选择 | 待优化 Skill / Prompt / Tool description / Code | 本轮优化对象 | 先限定 blast radius，避免一上来全局修改 |
+| 数据集构造 | SessionDB、execution traces、golden set、synthetic data | 可评测任务集 | 防止数据偏斜与 rubric overfit |
+| 优化执行 | DSPy、GEPA、MIPROv2 | 候选变体 | 不只看分数，也看失败原因 |
+| 验证与约束 | pytest、benchmarks、semantic checks、size budget | 通过 gate 的候选版本 | 防止局部增强换来全局退化 |
+| 交付与合并 | Git branch、PR body、before/after metrics | 可审查 PR | 只做离线优化，由人审核后进入主线 |
+
 这里的关键不在“变异”本身，而在于它把以下几件事串起来了：
 
 - 真实使用数据（SessionDB）
@@ -118,6 +131,13 @@ README 里给的主线是 DSPy + GEPA，PLAN 则把整体结构展开得更完�
 - 然后再对文本进行定向变异
 
 这比传统“多采样几个 prompt，谁分高留谁”的黑箱搜索更进一步。
+
+| 维度 | 传统黑箱 Prompt 搜索 | GEPA |
+| --- | --- | --- |
+| 反馈信号 | 主要看最终分数或成败标签 | 结合 execution traces 与失败原因 |
+| 变异方式 | 更偏盲搜、多试几版 | 更偏定向改写与反思式调整 |
+| 适配对象 | 泛化 prompt 优选 | Skill、tool description、system prompt 等文本资产 |
+| 对 Agent 的意义 | 找到“更高分版本” | 找到“为什么更好、为什么更稳”的版本 |
 
 在这个项目里，GEPA 的价值可以概括成三点：
 
@@ -187,6 +207,12 @@ README 里目前最明确的是：
 - **Phase 1：Skill Evolution** 已实现
 - 其余阶段更多还是 roadmap / planned
 
+| 阶段 | 优化对象 | 收益预期 | 风险 | 当前现实性 |
+| --- | --- | --- | --- | --- |
+| Phase 1 | Skill | 高：能快速改善一类任务的执行方式 | 低：纯文本、易回滚 | 最高 |
+| Phase 2 | Tool description / Prompt section | 中高：能系统影响工具选择与行为稳定性 | 中：影响面更广 | 较高 |
+| 后续阶段 | Code evolution | 潜在最高：直接改变系统能力上限 | 高：接口、安全、兼容性都可能受影响 | 需谨慎推进 |
+
 我觉得这很合理，因为 Skill Evolution 是整个体系里：
 
 - 收益高
@@ -251,6 +277,14 @@ README 里目前最明确的是：
 - before / after metrics
 - human review
 
+| 层级 | 负责什么 | 典型资产 / 机制 | 对应价值 |
+| --- | --- | --- | --- |
+| 目标层 | 定义“改哪里” | Skill、Tool description、Prompt section、Code | 把优化目标对象化 |
+| 数据层 | 定义“凭什么改” | Synthetic eval data、SessionDB mining、golden set、failure cases | 把经验转成可评测样本 |
+| 优化层 | 定义“怎么改” | DSPy + GEPA、MIPROv2、Darwinian Evolver | 把改进从手工调参变成搜索过程 |
+| 验证层 | 定义“能不能过” | pytest、TBLite、YC-Bench、TerminalBench2、semantic preservation | 防止局部提升破坏全局表现 |
+| 交付层 | 定义“如何进入生产” | Git branch、PR body、before/after metrics、human review | 让演化结果可审计、可回滚、可合并 |
+
 所以这个项目不是一个“小研究点”，而是在尝试把 Agent 的优化、评测、部署治理串成一条生产级流水线。
 
 ---
@@ -303,6 +337,8 @@ README 里目前最明确的是：
 - Agent 优化必须有全局回归门
 
 ---
+
+如果说前面几节主要是在拆这个项目“怎么运作”，那么下面这部分更像是在收束一个判断：它究竟是什么、真正的新意在哪、以及为什么它值得长期关注。
 
 ## 我对这个项目的最新判断
 
@@ -360,9 +396,17 @@ README 里目前最明确的是：
 - 错误处理
 - 工具注册与兼容性
 
+| 风险点 | 可能表现 | 为什么需要 gate / 人审 |
+| --- | --- | --- |
+| 数据集质量不足 | 在 eval 上变好，但真实任务没明显提升 | 防止优化器学到偏差样本 |
+| 局部最优冒充整体进步 | 某项分数上升，但工具使用更差、输出更保守 | 防止任务分与系统分脱节 |
+| Code evolution 过激 | 接口破坏、安全回归、兼容性受损 | 防止“自动改动”直接伤到主系统 |
+
 所以我认同它把代码放在更后面的 phase，而不是一上来就“自动改工具实现”。
 
 ---
+
+上面说的是边界与代价；下面再看它一旦真正跑通，对 Hermes Agent 本身意味着什么。
 
 ## 对 Hermes Agent 本身意味着什么
 
