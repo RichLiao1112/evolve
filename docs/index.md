@@ -59,25 +59,4 @@ hide:
   </a>
 </div>
 
-## 这个站适合发什么
-
-<div class="topic-grid">
-  <div class="topic-card">
-    <h3>项目总结</h3>
-    <p>把一个项目的背景、方法、关键结果和可复用经验整理成可外发的文档。</p>
-  </div>
-  <div class="topic-card">
-    <h3>技术方案</h3>
-    <p>适合沉淀架构设计、自动化流程、部署策略和系统演进方向。</p>
-  </div>
-  <div class="topic-card">
-    <h3>研究笔记</h3>
-    <p>适合发布模型研究、工具评估、方案对比和阶段性洞察。</p>
-  </div>
-  <div class="topic-card">
-    <h3>公开分享内容</h3>
-    <p>适合从长文中抽出一版“可对外传播”的版本，用于群分享和沉淀链接资产。</p>
-  </div>
-</div>
-
 
