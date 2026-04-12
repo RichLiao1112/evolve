@@ -27,4 +27,15 @@ hide:
       <span>Playwright</span>
     </div>
   </a>
+
+  <a class="report-card" href="life/camera-maximize-value/">
+    <div class="report-card__meta">生活 · 创作工具</div>
+    <h3>有一台相机，怎么最大化利用？</h3>
+    <p>把相机从“设备”变成“系统”：用于记录生活、训练审美、生产内容、积累素材，并逐步尝试副业变现。</p>
+    <div class="report-card__tags">
+      <span>摄影</span>
+      <span>内容创作</span>
+      <span>生活</span>
+    </div>
+  </a>
 </div>

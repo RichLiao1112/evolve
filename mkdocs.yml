@@ -62,3 +62,5 @@ nav:
   - 报告:
       - reports/hermes-agent-self-evolution.md
       - reports/ai-site-optimization-loop.md
+  - 生活:
+      - 相机利用指南: life/camera-maximize-value.md
