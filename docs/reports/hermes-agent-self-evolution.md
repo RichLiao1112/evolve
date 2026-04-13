@@ -21,21 +21,6 @@
 
 ---
 
-<div class="sponsor-block sponsor-block--report sponsor-block--muted">
-  <div class="sponsor-block__eyebrow">Report Sponsor Slot</div>
-  <h3>报告页合作位 · 适合 Agent、开发平台与研究工具</h3>
-  <p>像这类偏工程分析与方法论的页面，更适合展示与 Agent、模型开发、评测、API 服务或自动化平台相关的合作支持信息，而不是传统广告横幅。</p>
-  <div class="sponsor-block__chips">
-    <span>报告页版</span>
-    <span>Agent / Eval / API</span>
-    <span>内容一致性</span>
-  </div>
-  <div class="sponsor-block__actions">
-    <a href="../site-info/contact/">申请报告合作位</a>
-    <a href="../site-info/about/">查看站点定位</a>
-  </div>
-</div>
-
 ## 这个项目到底在优化什么
 
 从 README 和 PLAN 看，这个项目明确区分了几个层级的优化目标。

@@ -15,21 +15,6 @@
     - [Profiles / 多实例管理](hermes/profiles.md)
     - [常见故障排查](hermes/troubleshooting.md)
 
-<div class="sponsor-block sponsor-block--article sponsor-block--muted">
-  <div class="sponsor-block__eyebrow">Article Sponsor Slot</div>
-  <h3>文章页通用赞助位 · 适合与正文主题强相关的工具或服务</h3>
-  <p>这是通用文章页版赞助位示例，适合插在正文开头之后，用于展示与当前主题高度相关的产品、API、服务或长期合作信息。</p>
-  <div class="sponsor-block__chips">
-    <span>文章页版</span>
-    <span>通用复用</span>
-    <span>主题相关优先</span>
-  </div>
-  <div class="sponsor-block__actions">
-    <a href="site-info/contact/">联系合作</a>
-    <a href="site-info/disclaimer/">查看披露说明</a>
-  </div>
-</div>
-
 ## 结构说明
 
 为了避免把所有内容都堆在一个长页面里，Hermes 文档现在按主题拆成四类：
