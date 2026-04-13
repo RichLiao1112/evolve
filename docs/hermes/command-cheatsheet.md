@@ -7,6 +7,12 @@
 
 ## 一页速览
 
+### 安装
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+```
+
 | 场景 | 最常用命令 |
 |---|---|
 | 看整体状态 | `hermes status --all` |

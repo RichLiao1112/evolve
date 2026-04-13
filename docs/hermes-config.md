@@ -33,6 +33,12 @@
 
 ## 快速开始
 
+如果你还没安装 Hermes，可以先执行：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+```
+
 如果你只是想快速排查，建议按这个顺序：
 
 1. 先想快速找命令：看 [命令速查](hermes/command-cheatsheet.md)
