@@ -14,7 +14,6 @@ theme:
   features:
     - navigation.instant
     - navigation.sections
-    - navigation.expand
     - navigation.top
     - search.suggest
     - search.highlight
