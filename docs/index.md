@@ -18,24 +18,24 @@ hide:
   </a>
 
   <a class="report-card" href="free-models/index/">
-    <div class="report-card__meta">免费模型 · 板块总览</div>
-    <h3>免费模型板块</h3>
-    <p>持续整理公开可用、低成本或限时免费的模型解读，重点看能力边界、工程适配性与真实使用成本。</p>
+    <div class="report-card__meta">免费模型 · 可直接使用</div>
+    <h3>免费且可直接使用的模型</h3>
+    <p>只收录当前免费、而且可以直接通过现有入口拿来试的模型，帮你快速判断要不要立刻上手。</p>
     <div class="report-card__tags">
+      <span>Free</span>
+      <span>Direct Use</span>
       <span>OpenRouter</span>
-      <span>Model Review</span>
-      <span>Cost</span>
     </div>
   </a>
 
   <a class="report-card" href="free-models/elephant-alpha/">
-    <div class="report-card__meta">免费模型 · OpenRouter</div>
-    <h3>Elephant Alpha 深度解读</h3>
-    <p>它当前最有价值的标签不是“免费”，而是可能把“足够聪明、足够便宜、足够工程友好”同时做出来。</p>
+    <div class="report-card__meta">免费模型 · 可直接使用</div>
+    <h3>Elephant Alpha：免费、可直接用吗？</h3>
+    <p>当前免费，可直接通过 OpenRouter 使用，适合代码、总结和轻量 Agent 任务快速上手试跑。</p>
     <div class="report-card__tags">
-      <span>100B</span>
+      <span>Free</span>
       <span>256K Context</span>
-      <span>Agent</span>
+      <span>OpenRouter</span>
     </div>
   </a>
 
