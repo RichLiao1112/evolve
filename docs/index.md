@@ -6,6 +6,28 @@ hide:
 ## 精选内容 { #featured-content }
 
 <div class="report-grid">
+  <a class="report-card" href="free-models/index/">
+    <div class="report-card__meta">免费模型 · 板块总览</div>
+    <h3>免费模型板块</h3>
+    <p>持续整理公开可用、低成本或限时免费的模型解读，重点看能力边界、工程适配性与真实使用成本。</p>
+    <div class="report-card__tags">
+      <span>OpenRouter</span>
+      <span>Model Review</span>
+      <span>Cost</span>
+    </div>
+  </a>
+
+  <a class="report-card" href="free-models/elephant-alpha/">
+    <div class="report-card__meta">免费模型 · OpenRouter</div>
+    <h3>Elephant Alpha 深度解读</h3>
+    <p>它当前最有价值的标签不是“免费”，而是可能把“足够聪明、足够便宜、足够工程友好”同时做出来。</p>
+    <div class="report-card__tags">
+      <span>100B</span>
+      <span>256K Context</span>
+      <span>Agent</span>
+    </div>
+  </a>
+
   <a class="report-card" href="reports/hermes-agent-self-evolution/">
     <div class="report-card__meta">项目总结 · AI Agent</div>
     <h3>Hermes Agent Self-Evolution 项目总结</h3>

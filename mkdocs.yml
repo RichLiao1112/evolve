@@ -59,6 +59,9 @@ nav:
       - Profiles / 多实例管理: hermes/profiles.md
       - 配置文件与维护: hermes/config-files-and-maintenance.md
       - 常见故障排查: hermes/troubleshooting.md
+  - 免费模型:
+      - 总览: free-models/index.md
+      - Elephant Alpha 深度解读: free-models/elephant-alpha.md
   - 报告:
       - reports/hermes-agent-self-evolution.md
       - reports/ai-site-optimization-loop.md
