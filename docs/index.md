@@ -6,17 +6,6 @@ hide:
 ## 精选内容 { #featured-content }
 
 <div class="report-grid">
-  <a class="report-card" href="free-models/openclaw-hermes-openrouter-free-models/">
-    <div class="report-card__meta">免费模型 · 配置指南</div>
-    <h3>OpenClaw 和 Hermes 怎么接 OpenRouter 免费模型</h3>
-    <p>同样是“接免费模型”，Hermes 更像产品级配置题，OpenClaw 更像工程级架构题，这两者的正确姿势完全不同。</p>
-    <div class="report-card__tags">
-      <span>OpenRouter</span>
-      <span>Hermes</span>
-      <span>OpenClaw</span>
-    </div>
-  </a>
-
   <a class="report-card" href="free-models/index/">
     <div class="report-card__meta">免费模型 · 可直接使用</div>
     <h3>免费且可直接使用的模型</h3>
@@ -30,7 +19,7 @@ hide:
 
   <a class="report-card" href="free-models/elephant-alpha/">
     <div class="report-card__meta">免费模型 · 可直接使用</div>
-    <h3>Elephant Alpha：免费、可直接用吗？</h3>
+    <h3>Elephant Alpha - 免费模型 - 2026-04-13</h3>
     <p>当前免费，可直接通过 OpenRouter 使用，适合代码、总结和轻量 Agent 任务快速上手试跑。</p>
     <div class="report-card__tags">
       <span>Free</span>

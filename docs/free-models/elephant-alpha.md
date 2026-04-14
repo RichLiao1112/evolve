@@ -1,4 +1,4 @@
-# Elephant Alpha：免费、可直接用吗？
+# Elephant Alpha - 免费模型 - 2026-04-13
 
 ## 先给结论
 

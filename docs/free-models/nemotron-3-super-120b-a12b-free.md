@@ -1,4 +1,4 @@
-# NVIDIA Nemotron 3 Super 120B A12B（免费版）：免费、可直接用吗？
+# NVIDIA Nemotron 3 Super 120B A12B - 免费模型 - 2026-03-11
 
 ## 先给结论
 

@@ -13,9 +13,8 @@
 
 ## 当前内容
 
-- [OpenClaw 智能体模型配置：最短改法](openclaw-hermes-openrouter-free-models.md)
-- [Elephant Alpha：免费、可直接用吗？](elephant-alpha.md)
-- [NVIDIA Nemotron 3 Super 120B A12B（免费版）：免费、可直接用吗？](nemotron-3-super-120b-a12b-free.md)
+- [Elephant Alpha - 免费模型 - 2026-04-13](elephant-alpha.md)
+- [NVIDIA Nemotron 3 Super 120B A12B - 免费模型 - 2026-03-11](nemotron-3-super-120b-a12b-free.md)
 
 ## 我对这个板块的判断标准
 

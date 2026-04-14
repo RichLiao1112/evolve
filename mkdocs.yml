@@ -61,9 +61,8 @@ nav:
       - 常见故障排查: hermes/troubleshooting.md
   - 免费模型:
       - 总览: free-models/index.md
-      - OpenClaw 智能体模型配置: free-models/openclaw-hermes-openrouter-free-models.md
-      - Elephant Alpha：免费、可直接用吗: free-models/elephant-alpha.md
-      - NVIDIA Nemotron 3 Super 120B A12B（免费版）：免费、可直接用吗: free-models/nemotron-3-super-120b-a12b-free.md
+      - Elephant Alpha - 免费模型 - 2026-04-13: free-models/elephant-alpha.md
+      - NVIDIA Nemotron 3 Super 120B A12B - 免费模型 - 2026-03-11: free-models/nemotron-3-super-120b-a12b-free.md
   - 报告:
       - reports/hermes-agent-self-evolution.md
       - reports/ai-site-optimization-loop.md
