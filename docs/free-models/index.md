@@ -10,8 +10,9 @@
 
 ## 当前文章
 
-- [OpenClaw 和 Hermes 怎么接 OpenRouter 免费模型](openclaw-hermes-openrouter-free-models.md)
-- [OpenRouter Elephant Alpha 深度解读：便宜不重要，关键是“高智力密度”](elephant-alpha.md)
+- [OpenClaw 智能体模型配置：最短改法](openclaw-hermes-openrouter-free-models.md)
+- [Elephant Alpha：值不值得试？](elephant-alpha.md)
+- [NVIDIA Nemotron 3 Super 120B A12B（免费版）：值不值得试？](nemotron-3-super-120b-a12b-free.md)
 
 ## 我会怎么读一个“免费模型”
 

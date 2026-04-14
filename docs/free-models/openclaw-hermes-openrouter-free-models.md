@@ -1,91 +1,38 @@
-# OpenClaw 和 Hermes 接 OpenRouter 免费模型：最短配置法
+# OpenClaw 智能体模型配置：最短改法
 
 ## 先给结论
 
-- **想最快跑起来：用 Hermes**
-- **想接到 OpenClaw 链路：优先改 `targets`，不要只改 `openclaw-agents`**
+如果你这里要放的是 **OpenClaw 这个智能体本身的模型配置**，那应优先看：
+
+```text
+GET /ai-settings/openclaw-agents
+PATCH /ai-settings/openclaw-agents
+```
+
+而不是先看 `targets`。
 
 ---
 
-## Hermes：最短配置
-
-### 方式 1：直接交互式配置
-
-```bash
-hermes config set OPENROUTER_API_KEY sk-or-...
-hermes model
-```
-
-然后在模型选择里：
-
-- provider 选 `openrouter`
-- model 选目标免费模型
-
-### 方式 2：手动写 alias
-
-编辑 `~/.hermes/config.yaml`：
-
-```yaml
-model_aliases:
-  or-free:
-    model: openrouter/elephant-alpha
-    provider: openrouter
-```
-
-之后可直接切换：
-
-```bash
-/model or-free
-```
-
-### 配完后检查
-
-```bash
-hermes status
-hermes doctor
-```
-
----
-
-## OpenClaw：最短配置思路
-
-### 1. 优先改 `targets`
+## 读取当前配置
 
 接口：
 
 ```text
-PATCH /ai-settings/targets
+GET /ai-settings/openclaw-agents
 ```
 
-思路：
-- `provider` 设成 `openai`
-- `model` 写 OpenRouter 模型 slug
-- `base_url` 指向 `https://openrouter.ai/api/v1`
-- `api_key` 用 OpenRouter key
+会返回这些 OpenClaw 智能体位：
 
-示例请求体：
+- `xReportDocs`
+- `xReportRednote`
+- `xHomeDigest`
+- `xueqiuReviewAnalysis`
 
-```json
-{
-  "xHomeDigest": {
-    "provider": "openai",
-    "model": "openrouter/elephant-alpha",
-    "timeoutMs": 120000,
-    "temperature": 0.3
-  }
-}
-```
+这些字段对应的就是 OpenClaw 智能体模型名。
 
-### 2. 配环境变量
+---
 
-```bash
-X_HOME_DIGEST_AI_PROVIDER=openai
-X_HOME_DIGEST_AI_MODEL=openrouter/elephant-alpha
-X_HOME_DIGEST_OPENAI_BASE_URL=https://openrouter.ai/api/v1
-X_HOME_DIGEST_OPENAI_API_KEY=sk-or-...
-```
-
-### 3. 不要只改 `openclaw-agents`
+## 修改 OpenClaw 智能体模型
 
 接口：
 
@@ -93,21 +40,73 @@ X_HOME_DIGEST_OPENAI_API_KEY=sk-or-...
 PATCH /ai-settings/openclaw-agents
 ```
 
-这个更适合改 OpenClaw 内部 agent 名称，例如：
+请求体示例：
 
-```text
-openclaw:docs
+```json
+{
+  "xReportDocs": "openclaw:docs",
+  "xReportRednote": "openclaw:docs",
+  "xHomeDigest": "openclaw:docs",
+  "xueqiuReviewAnalysis": "openclaw:docs"
+}
 ```
 
-**它不等于已经把调用链路切成 OpenRouter。**
+如果你只改一个，就只传一个字段：
+
+```json
+{
+  "xHomeDigest": "openclaw:docs"
+}
+```
+
+---
+
+## 环境变量兜底
+
+如果数据库里没有持久化配置，会按环境变量 / 默认值回退。
+
+相关环境变量包括：
+
+```bash
+OPENCLAW_DOCS_MODEL=openclaw:docs
+OPENCLAW_RENOTE_MODEL=openclaw:docs
+OPENCLAW_REVIEW_ANALYSIS_MODEL=openclaw:docs
+X_HOME_DIGEST_AI_MODEL=openclaw:docs
+```
+
+当前代码里的优先级是：
+
+- **DB 持久化配置**
+- **环境变量**
+- **默认值**
+
+---
+
+## `targets` 是干什么的
+
+```text
+PATCH /ai-settings/targets
+```
+
+这个接口更偏 **AI 路由配置**，可同时改：
+
+- `provider`
+- `model`
+- `timeoutMs`
+- `temperature`
+
+所以：
+
+- **如果你要改 OpenClaw 智能体模型名，用 `openclaw-agents`**
+- **如果你要改整条 AI 调用链路的 provider/model，用 `targets`**
 
 ---
 
 ## 最短判断
 
-- **只想快速用免费模型：Hermes**
-- **想接业务链路：OpenClaw 改 `targets`**
-- **只改 `openclaw-agents`：通常不够**
+- **改 OpenClaw 智能体模型名** → `PATCH /ai-settings/openclaw-agents`
+- **改 AI 路由 / provider** → `PATCH /ai-settings/targets`
+- **只看当前值** → `GET /ai-settings/openclaw-agents`
 
 ## 信息来源说明
 
@@ -115,4 +114,5 @@ openclaw:docs
 
 - `server/src/modules/ai-settings/ai-settings.types.ts`
 - `server/src/modules/ai-settings/ai-settings.controller.ts`
-- `server/src/modules/ai-runtime/providers/openai-compatible.provider.ts`
+- `server/src/modules/ai-settings/dto/openclaw-agents.dto.ts`
+- `server/src/modules/ai-settings/ai-settings.service.ts`
