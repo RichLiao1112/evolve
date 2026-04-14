@@ -1,5 +1,12 @@
 # Open Agents 技术架构总结
 
+## 相关地址
+
+- 项目仓库：https://github.com/vercel-labs/open-agents
+- README：https://github.com/vercel-labs/open-agents/blob/main/README.md
+- 官方演示站：https://open-agents.dev/
+- Vercel 部署入口：https://vercel.com/new/clone?repository-url=https://github.com/vercel-labs/open-agents
+
 ## 一句话判断
 
 `vercel-labs/open-agents` 不是一个简单的聊天式 coding agent，而是一套 **运行在 Vercel 上的云端后台编程 Agent 参考架构**。
