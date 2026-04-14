@@ -6,6 +6,17 @@ hide:
 ## 精选内容 { #featured-content }
 
 <div class="report-grid">
+  <a class="report-card" href="free-models/openclaw-hermes-openrouter-free-models/">
+    <div class="report-card__meta">免费模型 · 配置指南</div>
+    <h3>OpenClaw 和 Hermes 怎么接 OpenRouter 免费模型</h3>
+    <p>同样是“接免费模型”，Hermes 更像产品级配置题，OpenClaw 更像工程级架构题，这两者的正确姿势完全不同。</p>
+    <div class="report-card__tags">
+      <span>OpenRouter</span>
+      <span>Hermes</span>
+      <span>OpenClaw</span>
+    </div>
+  </a>
+
   <a class="report-card" href="free-models/index/">
     <div class="report-card__meta">免费模型 · 板块总览</div>
     <h3>免费模型板块</h3>

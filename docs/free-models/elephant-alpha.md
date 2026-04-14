@@ -51,6 +51,8 @@ Elephant Alpha 目前更适合这几类用户：
 | 适用方向 | code completion、debugging、rapid document processing、lightweight agent interactions |
 | 当前可见 provider | Stealth |
 | 速率限制 | 100 RPM |
+| 上架 OpenRouter 时间 | 2026-04-13 03:56:38 UTC |
+| 知识库截止时间 | 未公开 / 当前公开接口未提供 |
 | 数据策略提醒 | provider 可能记录 prompt / completion，并用于改进模型 |
 
 !!! warning "一个很重要的现实前提"

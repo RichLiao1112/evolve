@@ -10,6 +10,7 @@
 
 ## 当前文章
 
+- [OpenClaw 和 Hermes 怎么接 OpenRouter 免费模型](openclaw-hermes-openrouter-free-models.md)
 - [OpenRouter Elephant Alpha 深度解读：便宜不重要，关键是“高智力密度”](elephant-alpha.md)
 
 ## 我会怎么读一个“免费模型”
