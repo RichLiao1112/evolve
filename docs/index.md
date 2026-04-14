@@ -28,6 +28,17 @@ hide:
     </div>
   </a>
 
+  <a class="report-card" href="reports/open-agents-architecture-summary/">
+    <div class="report-card__meta">技术架构 · AI Agent</div>
+    <h3>Open Agents 技术架构总结</h3>
+    <p>从 Web、durable workflow 到 sandbox VM，梳理 Open Agents 如何把 coding agent 做成可恢复、可持续运行的云端系统。</p>
+    <div class="report-card__tags">
+      <span>Vercel</span>
+      <span>Workflow</span>
+      <span>Sandbox</span>
+    </div>
+  </a>
+
   <a class="report-card" href="reports/hermes-agent-self-evolution/">
     <div class="report-card__meta">项目总结 · AI Agent</div>
     <h3>Hermes Agent Self-Evolution 项目总结</h3>
