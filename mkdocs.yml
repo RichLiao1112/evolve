@@ -64,7 +64,7 @@ nav:
       - Elephant Alpha - 免费模型 - 2026-04-13: free-models/elephant-alpha.md
       - NVIDIA Nemotron 3 Super 120B A12B - 免费模型 - 2026-03-11: free-models/nemotron-3-super-120b-a12b-free.md
   - 报告:
-      - 三省六部幻觉：为什么“虚拟公司式”多 Agent 架构不成立: reports/multi-agent-virtual-company-fallacy.md
+      - 别再给 Agent 发工牌了: reports/multi-agent-virtual-company-fallacy.md
       - Open Agents 技术架构总结: reports/open-agents-architecture-summary.md
       - reports/hermes-agent-self-evolution.md
       - reports/ai-site-optimization-loop.md

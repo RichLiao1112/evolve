@@ -30,8 +30,8 @@ hide:
 
   <a class="report-card" href="reports/multi-agent-virtual-company-fallacy/">
     <div class="report-card__meta">观点解读 · AI Agent</div>
-    <h3>三省六部幻觉：为什么“虚拟公司式”多 Agent 架构不成立</h3>
-    <p>解读这篇文章的核心判断：多 Agent 真正该解决的是上下文、并行搜索与独立验证，而不是把人类组织图硬套进模型系统。</p>
+    <h3>别再给 Agent 发工牌了</h3>
+    <p>不是反对多 Agent，而是反对把人类公司岗位硬套进模型系统：真正重要的是上下文完整性、并行探索和独立验证。</p>
     <div class="report-card__tags">
       <span>Multi-Agent</span>
       <span>Context Engineering</span>
