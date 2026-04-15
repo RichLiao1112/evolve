@@ -22,6 +22,7 @@
 | --- | --- |
 | 模型名 | NVIDIA Nemotron 3 Super 120B A12B（free） |
 | OpenRouter slug | `nvidia/nemotron-3-super-120b-a12b:free` |
+| OpenRouter 页面 | https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free |
 | 当前是否免费 | 是 |
 | canonical slug | `nvidia/nemotron-3-super-120b-a12b-20230311` |
 | 模态 | text → text |

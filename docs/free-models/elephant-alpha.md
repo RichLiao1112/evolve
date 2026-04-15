@@ -22,6 +22,7 @@
 | --- | --- |
 | 模型名 | Elephant Alpha |
 | OpenRouter slug | `openrouter/elephant-alpha` |
+| OpenRouter 页面 | https://openrouter.ai/openrouter/elephant-alpha |
 | 当前是否免费 | 是 |
 | 模态 | text → text |
 | 上下文窗口 | 256K |
