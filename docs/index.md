@@ -28,6 +28,17 @@ hide:
     </div>
   </a>
 
+  <a class="report-card" href="reports/multi-agent-virtual-company-fallacy/">
+    <div class="report-card__meta">观点解读 · AI Agent</div>
+    <h3>三省六部幻觉：为什么“虚拟公司式”多 Agent 架构不成立</h3>
+    <p>解读这篇文章的核心判断：多 Agent 真正该解决的是上下文、并行搜索与独立验证，而不是把人类组织图硬套进模型系统。</p>
+    <div class="report-card__tags">
+      <span>Multi-Agent</span>
+      <span>Context Engineering</span>
+      <span>Architecture</span>
+    </div>
+  </a>
+
   <a class="report-card" href="reports/open-agents-architecture-summary/">
     <div class="report-card__meta">技术架构 · AI Agent</div>
     <h3>Open Agents 技术架构总结</h3>
