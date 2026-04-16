@@ -75,6 +75,12 @@ plugins:
       cards_layout_options:
         background_color: "#1976d2"
         font_family: "Noto Sans SC"
+  - sitemap:
+      changefreq: weekly
+      priority: 0.5
+      exclude:
+        - site-info/privacy-policy.md
+        - site-info/disclaimer.md
 
 nav:
   - Hermes:
