@@ -15,6 +15,21 @@
 
 - [Elephant Alpha - 免费模型 - 2026-04-13](elephant-alpha.md)
 - [NVIDIA Nemotron 3 Super 120B A12B - 免费模型 - 2026-03-11](nemotron-3-super-120b-a12b-free.md)
+- [Google Gemma 4 31B Instruct - 免费模型 - 2026-04-02](gemma-4-31b-it-free.md)
+- [Qwen3 Coder 480B - 免费模型 - 2026-04](qwen3-coder-480b-free.md)
+- [Qwen3.6 Plus - 免费模型 - 2026-04](qwen3.6-plus-free.md)
+- [OpenAI GPT-OSS 120B - 免费模型 - 2026-03](gpt-oss-120b-free.md)
+
+## OpenRouter 免费额度说明
+
+使用 OpenRouter 的免费模型 (`:free` 后缀) 时，有以下速率限制：
+
+| 账户状态 | 每日请求数 | 每分钟请求数 |
+|---------|-----------|-------------|
+| 未充值或余额 < $10 | 50 次/天 | 20 次/分钟 |
+| 充值 ≥ $10 | 1000 次/天 | 20 次/分钟 |
+
+**提示**: 充值 $10 即可将每日免费额度从 50 次提升到 1000 次，性价比很高。
 
 ## 我对这个板块的判断标准
 
