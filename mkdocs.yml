@@ -63,9 +63,14 @@ nav:
       - 总览: free-models/index.md
       - Elephant Alpha - 免费模型 - 2026-04-13: free-models/elephant-alpha.md
       - NVIDIA Nemotron 3 Super 120B A12B - 免费模型 - 2026-03-11: free-models/nemotron-3-super-120b-a12b-free.md
+      - NVIDIA Nemotron 3 Nano 30B A3B - 免费模型 - 2026-02: free-models/nemotron-3-nano-30b-a3b-free.md
       - Google Gemma 4 31B Instruct - 免费模型 - 2026-04-02: free-models/gemma-4-31b-it-free.md
+      - Google Gemma 4 26B A4B - 免费模型 - 2026-04-03: free-models/gemma-4-26b-a4b-it-free.md
       - Qwen3 Coder 480B - 免费模型 - 2026-04: free-models/qwen3-coder-480b-free.md
+      - MiniMax M2.5 - 免费模型 - 2026-03: free-models/minimax-m2.5-free.md
+      - Meta Llama 3.3 70B - 免费模型 - 2025-12: free-models/llama-3.3-70b-instruct-free.md
       - OpenAI GPT-OSS 120B - 免费模型 - 2026-03: free-models/gpt-oss-120b-free.md
+      - OpenAI GPT-OSS 20B - 免费模型 - 2026-03: free-models/gpt-oss-20b-free.md
   - 报告:
       - 别再给 Agent 发工牌了: reports/multi-agent-virtual-company-fallacy.md
       - Open Agents 技术架构总结: reports/open-agents-architecture-summary.md

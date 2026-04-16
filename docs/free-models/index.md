@@ -15,9 +15,14 @@
 
 - [Elephant Alpha - 免费模型 - 2026-04-13](elephant-alpha.md)
 - [NVIDIA Nemotron 3 Super 120B A12B - 免费模型 - 2026-03-11](nemotron-3-super-120b-a12b-free.md)
+- [NVIDIA Nemotron 3 Nano 30B A3B - 免费模型 - 2026-02](nemotron-3-nano-30b-a3b-free.md)
 - [Google Gemma 4 31B Instruct - 免费模型 - 2026-04-02](gemma-4-31b-it-free.md)
+- [Google Gemma 4 26B A4B - 免费模型 - 2026-04-03](gemma-4-26b-a4b-it-free.md)
 - [Qwen3 Coder 480B - 免费模型 - 2026-04](qwen3-coder-480b-free.md)
+- [MiniMax M2.5 - 免费模型 - 2026-03](minimax-m2.5-free.md)
+- [Meta Llama 3.3 70B - 免费模型 - 2025-12](llama-3.3-70b-instruct-free.md)
 - [OpenAI GPT-OSS 120B - 免费模型 - 2026-03](gpt-oss-120b-free.md)
+- [OpenAI GPT-OSS 20B - 免费模型 - 2026-03](gpt-oss-20b-free.md)
 
 ## OpenRouter 免费额度说明
 
