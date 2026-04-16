@@ -1,0 +1,36 @@
+name: SEO Check
+
+on:
+  push:
+    paths:
+      - 'docs/**/*.md'
+  pull_request:
+    paths:
+      - 'docs/**/*.md'
+
+jobs:
+  seo-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Check for missing SEO front matter
+        run: |
+          python scripts/auto-seo.py --check-only || true
+      
+      - name: Comment PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '📝 **SEO 检查**: 请确保新增文档包含 front matter（description 和 keywords）。运行 `python scripts/auto-seo.py` 自动添加。'
+            })
