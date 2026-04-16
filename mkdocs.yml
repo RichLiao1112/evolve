@@ -1,9 +1,29 @@
 site_name: Evolve
-site_description: Public share site for reports, summaries, and technical notes
+site_description: 免费AI模型指南、技术报告与工具配置教程 - 帮助你快速找到可用的免费大语言模型
 site_url: https://evolve.liveppp.com
 repo_url: https://github.com/RichLiao1112/evolve
 repo_name: RichLiao1112
 copyright: Copyright © 2026 RichLiao1112
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/RichLiao1112
+  generator: false
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # 替换为你的 GA4 ID
+  meta:
+    - property: og:type
+      content: website
+    - property: og:site_name
+      content: Evolve
+    - property: og:locale
+      content: zh_CN
+    - name: twitter:card
+      content: summary_large_image
+    - name: author
+      content: RichLiao1112
 
 theme:
   name: material
@@ -46,6 +66,15 @@ markdown_extensions:
 
 plugins:
   - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+  - social:
+      cards: true
+      cards_layout_options:
+        background_color: "#1976d2"
+        font_family: "Noto Sans SC"
 
 nav:
   - Hermes:

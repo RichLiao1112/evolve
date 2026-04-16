@@ -2,7 +2,59 @@
 
 {% block extrahead %}
   {{ super() }}
+  
+  <!-- 结构化数据 - Website -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Evolve",
+    "url": "https://evolve.liveppp.com",
+    "description": "免费AI模型指南、技术报告与工具配置教程",
+    "author": {
+      "@type": "Person",
+      "name": "RichLiao1112"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Evolve"
+    }
+  }
+  </script>
+  
+  <!-- 结构化数据 - Article (如果是文章页面) -->
+  {% if page and page.meta and page.meta.title %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.meta.title }}",
+    "description": "{{ page.meta.description or config.site_description }}",
+    "url": "{{ page.canonical_url }}",
+    "datePublished": "{{ page.meta.date }}",
+    "author": {
+      "@type": "Person",
+      "name": "RichLiao1112"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Evolve"
+    }
+  }
+  </script>
+  {% endif %}
+  
+  <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8028709967688221"
     crossorigin="anonymous"></script>
+  
+  <!-- Adsterra -->
   <script src="https://pl29166204.profitablecpmratenetwork.com/54/2a/36/542a36929f9b1116e2622927c61e38be.js"></script>
+{% endblock %}
+
+{% block site_meta %}
+  {{ super() }}
+  <meta name="keywords" content="{{ page.meta.keywords if page and page.meta and page.meta.keywords else '免费AI模型, OpenRouter, LLM, AI工具, 技术教程, Hermes Agent' }}">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
 {% endblock %}
