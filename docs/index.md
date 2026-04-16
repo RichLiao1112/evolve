@@ -3,6 +3,11 @@ hide:
   - toc
 ---
 
+---
+description: Evolve - 免费AI模型指南、技术报告与工具配置教程，帮助你快速找到可用的免费大语言模型和AI工具配置方案。
+keywords: 免费AI模型, AI工具教程, 技术博客, OpenRouter, LLM指南, AI配置
+---
+
 ## 精选内容 { #featured-content }
 
 <div class="report-grid">

@@ -1,3 +1,8 @@
+---
+description: Elephant Alpha 当前免费，可直接通过 OpenRouter 使用，适合代码、总结和轻量 Agent 任务。256K 上下文，支持 function calling。
+keywords: Elephant Alpha, 免费AI模型, OpenRouter免费, LLM, 大语言模型, AI编程
+---
+
 # Elephant Alpha - 免费模型 - 2026-04-13
 
 ## 先给结论
