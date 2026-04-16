@@ -10,7 +10,7 @@
 | --- | --- |
 | 现在免费吗 | 是，OpenRouter 当前显示输入/输出都是 `0` |
 | 能直接用吗 | 能，直接用 `google/gemma-4-31b-it:free` |
-| 值不值得试 | 值得，适合需要多模态（图文）的任务 |
+| 值不值得试 | 值得，适合需要多模态（图/文/视频）的任务 |
 | 适不适合高敏任务 | Apache 2.0 开源，相对可控 |
 | 要不要长期保留 | 开源权重，值得进候选池 |
 
@@ -24,7 +24,7 @@
 | OpenRouter slug | `google/gemma-4-31b-it:free` |
 | OpenRouter 页面 | https://openrouter.ai/google/gemma-4-31b-it:free |
 | 当前是否免费 | 是 |
-| 模态 | text + image → text（多模态） |
+| 模态 | text + image + video → text（多模态） |
 | 上下文窗口 | 262K |
 | 最大输出 | 未明确标注 |
 | 支持功能 | function calling、structured output |
@@ -38,7 +38,7 @@
 - 有明确 slug：`google/gemma-4-31b-it:free`
 - 当前可直接通过 OpenRouter 调用
 - **Apache 2.0 许可证**，开源权重可下载部署
-- 支持图文多模态输入
+- 支持图文**视频**多模态输入
 - 上下文窗口够大（262K）
 
 ---
