@@ -6,7 +6,7 @@ hide:
 ## 精选内容 { #featured-content }
 
 <div class="report-grid">
-  <a class="report-card" href="free-models/index/">
+  <a class="report-card" href="free-models/">
     <div class="report-card__meta">免费模型 · 可直接使用</div>
     <h3>免费且可直接使用的模型</h3>
     <p>只收录当前免费、而且可以直接通过现有入口拿来试的模型，帮你快速判断要不要立刻上手。</p>
