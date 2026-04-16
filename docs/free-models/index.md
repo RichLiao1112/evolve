@@ -17,7 +17,7 @@
 - [NVIDIA Nemotron 3 Super 120B A12B - 免费模型 - 2026-03-11](nemotron-3-super-120b-a12b-free.md)
 - [Google Gemma 4 31B Instruct - 免费模型 - 2026-04-02](gemma-4-31b-it-free.md)
 - [Qwen3 Coder 480B - 免费模型 - 2026-04](qwen3-coder-480b-free.md)
-- [Qwen3.6 Plus - 免费模型 - 2026-04](qwen3.6-plus-free.md)
+- [Qwen3.6 Plus Preview - 免费模型 - 2026-04](qwen3.6-plus-preview-free.md)
 - [OpenAI GPT-OSS 120B - 免费模型 - 2026-03](gpt-oss-120b-free.md)
 
 ## OpenRouter 免费额度说明
