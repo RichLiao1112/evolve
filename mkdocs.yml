@@ -100,6 +100,9 @@ nav:
       - Meta Llama 3.3 70B - 免费模型 - 2025-12: free-models/llama-3.3-70b-instruct-free.md
       - OpenAI GPT-OSS 120B - 免费模型 - 2026-03: free-models/gpt-oss-120b-free.md
       - OpenAI GPT-OSS 20B - 免费模型 - 2026-03: free-models/gpt-oss-20b-free.md
+  - 工具:
+      - 总览: tools/index.md
+      - MarkItDown：把 PDF / Word / PPT / Excel 转成 Markdown 的轻量工具: tools/markitdown-guide.md
   - 报告:
       - 别再给 Agent 发工牌了: reports/multi-agent-virtual-company-fallacy.md
       - Open Agents 技术架构总结: reports/open-agents-architecture-summary.md

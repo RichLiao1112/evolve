@@ -11,6 +11,28 @@ keywords: 免费AI模型, AI工具教程, 技术博客, OpenRouter, LLM指南, A
 ## 精选内容 { #featured-content }
 
 <div class="report-grid">
+  <a class="report-card" href="tools/">
+    <div class="report-card__meta">工具 · 直接可用</div>
+    <h3>实用工具</h3>
+    <p>收录能直接接进现有工作流的工具型项目，重点看上手成本、适用场景和最短使用路径。</p>
+    <div class="report-card__tags">
+      <span>Tools</span>
+      <span>Workflow</span>
+      <span>Practical</span>
+    </div>
+  </a>
+
+  <a class="report-card" href="tools/markitdown-guide/">
+    <div class="report-card__meta">工具 · Markdown 转换</div>
+    <h3>MarkItDown：把 PDF / Word / PPT / Excel 转成 Markdown 的轻量工具</h3>
+    <p>微软开源，适合把复杂文档转成适合 LLM、RAG 和知识库使用的 Markdown 中间格式。</p>
+    <div class="report-card__tags">
+      <span>Markdown</span>
+      <span>RAG</span>
+      <span>Document Processing</span>
+    </div>
+  </a>
+
   <a class="report-card" href="free-models/">
     <div class="report-card__meta">免费模型 · 可直接使用</div>
     <h3>免费且可直接使用的模型</h3>
