@@ -55,6 +55,17 @@ keywords: 免费AI模型, AI工具教程, 技术博客, OpenRouter, LLM指南, A
     </div>
   </a>
 
+  <a class="report-card" href="reports/hermes-agent-advanced-guide/">
+    <div class="report-card__meta">实战指南 · AI Agent</div>
+    <h3>Hermes Agent 进阶实战：从熟练到精通</h3>
+    <p>深入解析记忆系统优化、技能自进化、多 Agent 协作与生产部署要点，帮助你真正驾驭 Hermes。</p>
+    <div class="report-card__tags">
+      <span>Hermes</span>
+      <span>Memory</span>
+      <span>Multi-Agent</span>
+    </div>
+  </a>
+
   <a class="report-card" href="reports/multi-agent-virtual-company-fallacy/">
     <div class="report-card__meta">观点解读 · AI Agent</div>
     <h3>别再给 Agent 发工牌了</h3>
