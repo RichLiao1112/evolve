@@ -303,3 +303,221 @@
     width: 100%;
   }
 }
+
+/* 分享组件样式 */
+.share-section {
+  margin: 3rem 0 2rem;
+  padding: 0 1rem;
+}
+
+.share-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.2), transparent);
+  margin-bottom: 1.5rem;
+}
+
+.share-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--evolve-text-soft);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  background: rgba(37, 99, 235, 0.05);
+  color: var(--evolve-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+  background: rgba(37, 99, 235, 0.12);
+  border-color: rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.share-btn.twitter {
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.share-btn.twitter:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.share-btn svg {
+  flex-shrink: 0;
+}
+
+/* 分享卡片模态框 */
+.share-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.share-modal-content {
+  background: var(--md-default-bg-color);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.share-card-preview {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.share-card-header {
+  margin-bottom: 1rem;
+}
+
+.share-card-logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+}
+
+.share-card-body h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  line-height: 1.4;
+  color: white;
+}
+
+.share-card-body p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.share-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.share-card-tags span {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.share-card-footer {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.share-card-url {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.share-modal-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.share-download-btn,
+.share-close-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.share-download-btn {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.96), rgba(124, 58, 237, 0.92));
+  color: white;
+  border: none;
+}
+
+.share-download-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.share-close-btn {
+  background: rgba(148, 163, 184, 0.1);
+  color: var(--evolve-text-soft);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.share-close-btn:hover {
+  background: rgba(148, 163, 184, 0.2);
+}
+
+/* 复制成功提示 */
+.copy-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(37, 99, 235, 0.95);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+  z-index: 1001;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .share-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .share-btn {
+    justify-content: center;
+  }
+  
+  .share-modal-content {
+    margin: 1rem;
+  }
+}

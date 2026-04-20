@@ -79,6 +79,84 @@
 {% block content %}
   {{ super() }}
   
+  <!-- 文章分享组件 -->
+  {% if page and page.meta and page.meta.title %}
+  <div class="share-section">
+    <div class="share-divider"></div>
+    <div class="share-title">分享这篇文章</div>
+    <div class="share-actions">
+      <button class="share-btn" onclick="copyLink()" title="复制链接">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+        <span>复制链接</span>
+      </button>
+      <button class="share-btn" onclick="generateShareCard()" title="生成分享卡片">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/></svg>
+        <span>生成卡片</span>
+      </button>
+      <a class="share-btn twitter" href="https://twitter.com/intent/tweet?text={{ page.meta.title | urlencode }}&url={{ page.canonical_url | urlencode }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <span>Twitter</span>
+      </a>
+    </div>
+    <div id="share-card-modal" class="share-modal" style="display:none;">
+      <div class="share-modal-content">
+        <div class="share-card-preview" id="share-card">
+          <div class="share-card-header">
+            <div class="share-card-logo">Evolve</div>
+          </div>
+          <div class="share-card-body">
+            <h3>{{ page.meta.title }}</h3>
+            <p>{{ page.meta.description or config.site_description }}</p>
+            <div class="share-card-tags">
+              {% if page.meta.keywords %}
+                {% for keyword in page.meta.keywords.split(',')[:3] %}
+                <span>{{ keyword.strip() }}</span>
+                {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+          <div class="share-card-footer">
+            <div class="share-card-url">evolve.liveppp.com</div>
+          </div>
+        </div>
+        <div class="share-modal-actions">
+          <button class="share-download-btn" onclick="downloadCard()">下载卡片</button>
+          <button class="share-close-btn" onclick="closeShareCard()">关闭</button>
+        </div>
+      </div>
+    </div>
+    <div id="copy-toast" class="copy-toast">链接已复制到剪贴板</div>
+  </div>
+  
+  <script>
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const toast = document.getElementById('copy-toast');
+        toast.style.display = 'block';
+        setTimeout(() => toast.style.display = 'none', 2000);
+      });
+    }
+    
+    function generateShareCard() {
+      document.getElementById('share-card-modal').style.display = 'flex';
+    }
+    
+    function closeShareCard() {
+      document.getElementById('share-card-modal').style.display = 'none';
+    }
+    
+    function downloadCard() {
+      // 使用 html2canvas 生成图片
+      alert('卡片生成中...（需要接入 html2canvas）');
+    }
+    
+    // 点击模态框外部关闭
+    document.getElementById('share-card-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeShareCard();
+    });
+  </script>
+  {% endif %}
+  
   <!-- Non-Google ads disabled temporarily
   <script>
     atOptions = {
