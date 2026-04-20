@@ -90,19 +90,18 @@ nav:
           - Maestro：多 Agent 持久战指挥官: reports/maestro.md
           - Icarus Plugin：自记忆与自训练接班人: reports/icarus-plugin.md
   - 工具:
-      - 总览: tools/index.md
-      - MarkItDown：把 PDF / Word / PPT / Excel 转成 Markdown 的轻量工具: tools/markitdown-guide.md
-  - Hermes:
-      - 总览: hermes-config.md
-      - 命令速查: hermes/command-cheatsheet.md
-      - 提速配置: hermes/performance.md
-      - Provider / 凭证配置: hermes/providers-and-credentials.md
-      - Gateway 配置: hermes/gateway.md
-      - 平台接入与消息入口: hermes/platform-integrations.md
-      - Tools 与 MCP 配置: hermes/tools-and-mcp.md
-      - Profiles / 多实例管理: hermes/profiles.md
-      - 配置文件与维护: hermes/config-files-and-maintenance.md
-      - 常见故障排查: hermes/troubleshooting.md
+      - 总览：tools/index.md
+      - MarkItDown：把 PDF / Word / PPT / Excel 转成 Markdown 的轻量工具：tools/markitdown-guide.md
+      - Hermes Agent:
+          - 总览：tools/config-files-and-maintenance.md
+          - 命令速查：tools/command-cheatsheet.md
+          - 提速配置：tools/performance.md
+          - Provider / 凭证配置：tools/providers-and-credentials.md
+          - Gateway 配置：tools/gateway.md
+          - 平台接入与消息入口：tools/platform-integrations.md
+          - Tools 与 MCP 配置：tools/tools-and-mcp.md
+          - Profiles / 多实例管理：tools/profiles.md
+          - 常见故障排查：tools/troubleshooting.md
   - 免费模型:
       - 总览: free-models/index.md
       - Elephant Alpha - 免费模型 - 2026-04-13: free-models/elephant-alpha.md
