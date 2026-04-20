@@ -137,7 +137,8 @@
     let currentQR = null;
     
     function copyLink() {
-      navigator.clipboard.writeText(window.location.href).then(() => {
+      const shareText = `{{ share_title }}\n\n{{ share_desc }}\n\n阅读原文：${window.location.href}`;
+      navigator.clipboard.writeText(shareText).then(() => {
         const toast = document.getElementById('copy-toast');
         toast.style.display = 'block';
         setTimeout(() => toast.style.display = 'none', 2000);
