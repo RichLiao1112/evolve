@@ -364,7 +364,7 @@ MEM0_API_KEY=***
 
 ## 相关地址
 
-- **Hermes Agent 官方仓库**: https://github.com/RichLiao1112/hermes-agent
+- **Hermes Agent 官方仓库**: https://github.com/NousResearch/hermes-agent
 - **Hermes 配置指南**: https://evolve.liveppp.com/hermes-config/
 
 ---
