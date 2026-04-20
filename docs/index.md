@@ -109,6 +109,61 @@ keywords: 免费AI模型, AI工具教程, 技术博客, OpenRouter, LLM指南, A
       <span>Playwright</span>
     </div>
   </a>
+
+  <a class="report-card" href="reports/hermes-agent-camel/">
+    <div class="report-card__meta">生态项目 · 安全</div>
+    <h3>hermes-agent-camel：CaMeL 双 LLM 安全加固</h3>
+    <p>集成 DeepMind CaMeL 信任边界，双 LLM 架构从结构上阻断 prompt 注入，生产环境终于敢上了。</p>
+    <div class="report-card__tags">
+      <span>CaMeL</span>
+      <span>Security</span>
+      <span>Production</span>
+    </div>
+  </a>
+
+  <a class="report-card" href="reports/hermes-alpha/">
+    <div class="report-card__meta">生态项目 · 部署</div>
+    <h3>hermes-alpha：一键云部署</h3>
+    <p>SOUL.md 驱动身份 + 云原生托管基础设施，一键把 Hermes Agent 扔上云，部署门槛归零。</p>
+    <div class="report-card__tags">
+      <span>Cloud</span>
+      <span>Deploy</span>
+      <span>SOUL.md</span>
+    </div>
+  </a>
+
+  <a class="report-card" href="reports/hermes-skill-factory/">
+    <div class="report-card__meta">生态项目 · 元技能</div>
+    <h3>hermes-skill-factory：Agent 自造武器</h3>
+    <p>元技能插件，静默观察工作流，自动将重复模式转化为可复用 Skill——Hermes 自己给自己造武器。</p>
+    <div class="report-card__tags">
+      <span>Meta-Skill</span>
+      <span>Auto-Generate</span>
+      <span>Workflow</span>
+    </div>
+  </a>
+
+  <a class="report-card" href="reports/maestro/">
+    <div class="report-card__meta">生态项目 · 编排</div>
+    <h3>Maestro：多 Agent 持久战指挥官</h3>
+    <p>结构化记忆 + Plan-Approve-Execute + 跨 Agent 交接，让 Codex/Claude Code/Gemini 有序协作打持久战。</p>
+    <div class="report-card__tags">
+      <span>Multi-Agent</span>
+      <span>Orchestration</span>
+      <span>Beads</span>
+    </div>
+  </a>
+
+  <a class="report-card" href="reports/icarus-plugin/">
+    <div class="report-card__meta">生态项目 · 记忆+自训练</div>
+    <h3>Icarus Plugin：自记忆与自训练接班人</h3>
+    <p>跨会话共享记忆 + 自动微调更便宜的替换模型，Agent 边干活边带徒弟，退休计划已安排好。</p>
+    <div class="report-card__tags">
+      <span>Self-Memory</span>
+      <span>Fine-Tune</span>
+      <span>Cost-Optimize</span>
+    </div>
+  </a>
 </div>
 
 <div class="site-links-inline">

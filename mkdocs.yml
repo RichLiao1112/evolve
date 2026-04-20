@@ -83,6 +83,12 @@ nav:
       - reports/hermes-agent-self-evolution.md
       - reports/ai-site-optimization-loop.md
       - Hermes Agent 进阶实战：从熟练到精通: reports/hermes-agent-advanced-guide.md
+      - Hermes Agent 生态项目:
+          - hermes-agent-camel：CaMeL 双 LLM 安全加固: reports/hermes-agent-camel.md
+          - hermes-alpha：一键云部署: reports/hermes-alpha.md
+          - hermes-skill-factory：Agent 自造武器: reports/hermes-skill-factory.md
+          - Maestro：多 Agent 持久战指挥官: reports/maestro.md
+          - Icarus Plugin：自记忆与自训练接班人: reports/icarus-plugin.md
   - 工具:
       - 总览: tools/index.md
       - MarkItDown：把 PDF / Word / PPT / Excel 转成 Markdown 的轻量工具: tools/markitdown-guide.md
