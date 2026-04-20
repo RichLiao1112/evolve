@@ -80,9 +80,9 @@
   {{ super() }}
   
   <!-- 文章分享组件 -->
-  {% if page and page.meta %}
-  {% set share_title = page.meta.title or page.title or config.site_name %}
-  {% set share_desc = page.meta.description or config.site_description %}
+  {% if page %}
+  {% set share_title = page.meta.title if page.meta and page.meta.title else page.title if page.title else config.site_name %}
+  {% set share_desc = page.meta.description if page.meta and page.meta.description else config.site_description %}
   <div class="share-section">
     <div class="share-divider"></div>
     <div class="share-title">分享这篇文章</div>
@@ -110,7 +110,7 @@
             <h3>{{ share_title }}</h3>
             <p>{{ share_desc }}</p>
             <div class="share-card-tags">
-              {% if page.meta.keywords %}
+              {% if page.meta and page.meta.keywords %}
                 {% for keyword in page.meta.keywords.split(',')[:3] %}
                 <span>{{ keyword.strip() }}</span>
                 {% endfor %}
