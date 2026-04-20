@@ -17,7 +17,7 @@ date: 2026-04-17
 
 ## 当前内容
 
-|- [Hermes Agent：CLI AI Agent 使用指南](/tools/hermes/command-cheatsheet/)
+|- [Hermes Agent：CLI AI Agent 使用指南](/tools/command-cheatsheet/)
 |- [MarkItDown：把 PDF / Word / PPT / Excel 转成 Markdown 的轻量工具](/tools/markitdown-guide/)
 
 ## 适合放进这一栏的项目
