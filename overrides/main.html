@@ -118,6 +118,7 @@
             </div>
           </div>
           <div class="share-card-footer">
+            <div class="share-card-qr" id="share-qr"></div>
             <div class="share-card-url">evolve.liveppp.com</div>
           </div>
         </div>
@@ -130,7 +131,11 @@
     <div id="copy-toast" class="copy-toast">链接已复制到剪贴板</div>
   </div>
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script>
+    let currentQR = null;
+    
     function copyLink() {
       navigator.clipboard.writeText(window.location.href).then(() => {
         const toast = document.getElementById('copy-toast');
@@ -141,15 +146,57 @@
     
     function generateShareCard() {
       document.getElementById('share-card-modal').style.display = 'flex';
+      // 生成二维码
+      const qrContainer = document.getElementById('share-qr');
+      qrContainer.innerHTML = '';
+      currentQR = new QRCode(qrContainer, {
+        text: window.location.href,
+        width: 80,
+        height: 80,
+        colorDark: '#ffffff',
+        colorLight: 'transparent',
+        correctLevel: QRCode.CorrectLevel.M
+      });
     }
     
     function closeShareCard() {
       document.getElementById('share-card-modal').style.display = 'none';
     }
     
-    function downloadCard() {
-      // 使用 html2canvas 生成图片
-      alert('卡片生成中...（需要接入 html2canvas）');
+    async function downloadCard() {
+      const card = document.getElementById('share-card');
+      const btn = document.querySelector('.share-download-btn');
+      
+      btn.textContent = '生成中...';
+      btn.disabled = true;
+      
+      try {
+        const canvas = await html2canvas(card, {
+          scale: 2,
+          useCORS: true,
+          allowTaint: true,
+          backgroundColor: null,
+          logging: false
+        });
+        
+        const link = document.createElement('a');
+        link.download = 'evolve-share-card.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+        
+        btn.textContent = '下载成功！';
+        setTimeout(() => {
+          btn.textContent = '下载卡片';
+          btn.disabled = false;
+        }, 2000);
+      } catch (err) {
+        console.error('生成卡片失败:', err);
+        btn.textContent = '生成失败，请重试';
+        setTimeout(() => {
+          btn.textContent = '下载卡片';
+          btn.disabled = false;
+        }, 2000);
+      }
     }
     
     // 点击模态框外部关闭
