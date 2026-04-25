@@ -83,8 +83,9 @@ nav:
       - reports/hermes-agent-self-evolution.md
       - reports/ai-site-optimization-loop.md
       - Hermes Agent 进阶实战：从熟练到精通: reports/hermes-agent-advanced-guide.md
-      - Hermes Agent 生态项目:
       - Flipbook 项目研究报告: reports/flipbook-research-report.md
+      - Hermes Agent 生态项目:
+
           - hermes-agent-camel：CaMeL 双 LLM 安全加固: reports/hermes-agent-camel.md
           - hermes-alpha：一键云部署: reports/hermes-alpha.md
           - hermes-skill-factory：Agent 自造武器: reports/hermes-skill-factory.md
