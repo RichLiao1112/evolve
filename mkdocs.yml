@@ -94,6 +94,7 @@ nav:
   - 工具:
       - 总览: tools/index.md
       - MarkItDown：把 PDF / Word / PPT / Excel 转成 Markdown 的轻量工具: tools/markitdown-guide.md
+      - Warp Rich Input 使用指南：CLI Agent 增强输入层: tools/warp-rich-input-guide.md
       - Hermes Agent:
           - 总览: tools/config-files-and-maintenance.md
           - 命令速查: tools/command-cheatsheet.md

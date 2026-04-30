@@ -22,6 +22,17 @@ keywords: 免费AI模型, AI工具教程, 技术博客, OpenRouter, LLM指南, A
     </div>
   </a>
 
+  <a class="report-card" href="tools/warp-rich-input-guide/">
+    <div class="report-card__meta">工具 · 终端增强</div>
+    <h3>Warp Rich Input 使用指南：CLI Agent 增强输入层</h3>
+    <p>为 Claude Code / Codex / OpenCode 等 CLI Agent 提供 IDE 风格编辑、@ 文件引用、语音输入和 Slash Commands。</p>
+    <div class="report-card__tags">
+      <span>Warp</span>
+      <span>CLI Agent</span>
+      <span>Terminal</span>
+    </div>
+  </a>
+
   <a class="report-card" href="tools/markitdown-guide/">
     <div class="report-card__meta">工具 · Markdown 转换</div>
     <h3>MarkItDown：把 PDF / Word / PPT / Excel 转成 Markdown 的轻量工具</h3>

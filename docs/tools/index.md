@@ -19,6 +19,7 @@ date: 2026-04-17
 
 |- [Hermes Agent：CLI AI Agent 使用指南](/tools/command-cheatsheet/)
 |- [MarkItDown：把 PDF / Word / PPT / Excel 转成 Markdown 的轻量工具](/tools/markitdown-guide/)
+|- [Warp Rich Input 使用指南：CLI Agent 增强输入层](/tools/warp-rich-input-guide/)
 
 ## 适合放进这一栏的项目
 
