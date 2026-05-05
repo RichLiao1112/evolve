@@ -77,14 +77,14 @@ keywords: 免费AI模型, AI工具教程, 技术博客, OpenRouter, LLM指南, A
     </div>
   </a>
 
-  <a class="report-card" href="reports/ai-feudal-lords/">
-    <div class="report-card__meta">观点分析 · AI 产业链</div>
-    <h3>AI 时代的真正地主：谁在收租，谁在交租</h3>
-    <p>抛开"Token 经济"的话术，从生产资料视角重新拆解 AI 产业链的七层阶级结构——算力、权重、数据、分发，谁握住这些谁就能稳定收租。</p>
+  <a class="report-card" href="reports/ai-api-halfyear/">
+    <div class="report-card__meta">个人复盘 · AI 创业</div>
+    <h3>在 API 上跑了半年 AI 产品，我重新理解了「赚钱」这件事</h3>
+    <p>不是技术指南也不是行业分析，只是一个做 AI 应用的人跑了半年之后的真实复盘——关于位置、焦虑和想清楚的三件事。</p>
     <div class="report-card__tags">
-      <span>AI Industry</span>
-      <span>Token Economy</span>
-      <span>Class Analysis</span>
+      <span>Indie Hacker</span>
+      <span>API Economy</span>
+      <span>Product</span>
     </div>
   </a>
 

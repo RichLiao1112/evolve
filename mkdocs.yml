@@ -88,7 +88,7 @@ nav:
       - reports/ai-site-optimization-loop.md
       - Hermes Agent 进阶实战：从熟练到精通: reports/hermes-agent-advanced-guide.md
       - Flipbook 项目研究报告: reports/flipbook-research-report.md
-      - AI 时代的真正地主：谁在收租，谁在交租: reports/ai-feudal-lords.md
+      - 在 API 上跑了半年 AI 产品，我重新理解了「赚钱」这件事: reports/ai-api-halfyear.md
       - Hermes Agent 生态项目:
 
           - hermes-agent-camel：CaMeL 双 LLM 安全加固: reports/hermes-agent-camel.md
