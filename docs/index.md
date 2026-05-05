@@ -11,6 +11,17 @@ keywords: 免费AI模型, AI工具教程, 技术博客, OpenRouter, LLM指南, A
 ## 精选内容 { #featured-content }
 
 <div class="report-grid">
+  <a class="report-card" href="reports/open-design/">
+    <div class="report-card__meta">报告 · 项目分析</div>
+    <h3>Open Design：AI 设计的开源突围战</h3>
+    <p>Anthropic Claude Design 的开源替代方案，25K+ Stars，31 个 Skills、129 套 Design System、15 种 Coding Agent CLI 驱动，本地优先、BYOK、Apache-2.0。</p>
+    <div class="report-card__tags">
+      <span>AI Design</span>
+      <span>Open Source</span>
+      <span>Agent</span>
+    </div>
+  </a>
+
   <a class="report-card" href="tools/">
     <div class="report-card__meta">工具 · 直接可用</div>
     <h3>实用工具</h3>

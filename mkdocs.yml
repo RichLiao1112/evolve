@@ -81,6 +81,7 @@ plugins:
 
 nav:
   - 报告:
+      - Open Design：AI 设计的开源突围战: reports/open-design.md
       - 别再给 Agent 发工牌了: reports/multi-agent-virtual-company-fallacy.md
       - Open Agents 技术架构总结: reports/open-agents-architecture-summary.md
       - reports/hermes-agent-self-evolution.md
