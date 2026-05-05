@@ -1,0 +1,28 @@
+# llms.txt
+
+## Overview
+Evolve is an AI‑enhanced knowledge base and toolset for rapid content generation, model evaluation, and AI‑assisted workflows. It provides tutorials, prompts, and scripts for leveraging large language models across various domains.
+
+## Key Pages
+- /docs/        – Full documentation site
+- /docs/infographic/   – Visual guides and infographics
+- /docs/free-models/   – Listings of free LLM models and their details
+- /site/        – Built static site for public consumption
+- /README.md    – Project overview and quick start
+
+## Author
+- Name: 9k9k9.eth (aka evolve maintainer)
+- Contact: @9k9k9.eth on X/Twitter
+- Repository: https://github.com/9k9k9/evolve
+
+## AI Interaction Guidelines
+- Content is structured with clear headings (`#`, `##`) and semantic HTML via MkDocs.
+- All images include descriptive `alt` text.
+- Frequently updated `README` and `docs` provide up‑to‑date context for AI summarization.
+
+## Licenses
+- Content: CC‑BY‑4.0
+- Code: MIT
+
+---
+This file is intended for AI crawlers (llms.txt standard). It gives concise site purpose, key entry points, and author attribution.
