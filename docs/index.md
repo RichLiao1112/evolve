@@ -77,6 +77,17 @@ keywords: 免费AI模型, AI工具教程, 技术博客, OpenRouter, LLM指南, A
     </div>
   </a>
 
+  <a class="report-card" href="reports/ai-feudal-lords/">
+    <div class="report-card__meta">观点分析 · AI 产业链</div>
+    <h3>AI 时代的真正地主：谁在收租，谁在交租</h3>
+    <p>抛开"Token 经济"的话术，从生产资料视角重新拆解 AI 产业链的七层阶级结构——算力、权重、数据、分发，谁握住这些谁就能稳定收租。</p>
+    <div class="report-card__tags">
+      <span>AI Industry</span>
+      <span>Token Economy</span>
+      <span>Class Analysis</span>
+    </div>
+  </a>
+
   <a class="report-card" href="reports/hermes-agent-advanced-guide/">
     <div class="report-card__meta">实战指南 · AI Agent</div>
     <h3>Hermes Agent 进阶实战：从熟练到精通</h3>
