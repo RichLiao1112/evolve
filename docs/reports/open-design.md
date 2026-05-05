@@ -11,12 +11,24 @@ Anthropic 在 2026 年 4 月 17 日发布了 Claude Design，用 Opus 4.7 驱动
 
 上线不到 10 天，GitHub 25,206 ⭐，2,739 Fork，146 Open Issues。Apache-2.0 协议。
 
+---
+
 ## 相关地址
 
 - **项目仓库**：[nexu-io/open-design](https://github.com/nexu-io/open-design)
 - **官方网站**：[open-design.ai](https://open-design.ai)
 - **技术栈**：Next.js 16 + TypeScript + Express 守护进程 + SQLite + Electron（可选）
 - **许可协议**：Apache-2.0
+
+---
+
+## 视觉图示
+
+![Open Design 海报](images/open-design-poster.png)
+
+![Open Design 架构图](images/open-design-architecture.svg)
+
+> 上图海报强调“开源、Agent 编排、Design Systems、BYOK”四个关键词；下图把 OD 的核心链路拆成 Web 前端、本地守护进程、Agent CLI 与持久化层。
 
 ---
 

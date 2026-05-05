@@ -1,0 +1,104 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="980" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="300" y1="180" x2="1300" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.20"/>
+      <stop offset="0.5" stop-color="#a78bfa" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0.12"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#1e293b" stroke-width="0.8"/>
+    </pattern>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrowCyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#22d3ee"/>
+    </marker>
+    <style>
+      .title { font: 700 44px 'Inter', 'Noto Sans SC', sans-serif; fill: #f8fafc; }
+      .sub { font: 400 20px 'Inter', 'Noto Sans SC', sans-serif; fill: #94a3b8; }
+      .label { font: 700 22px 'Inter', 'Noto Sans SC', sans-serif; fill: #f8fafc; }
+      .small { font: 400 16px 'Inter', 'Noto Sans SC', sans-serif; fill: #cbd5e1; }
+      .tiny { font: 400 13px 'Inter', 'Noto Sans SC', sans-serif; fill: #94a3b8; }
+      .chip { font: 600 14px 'Inter', 'Noto Sans SC', sans-serif; fill: #e2e8f0; }
+      .box { rx: 20; ry: 20; stroke-width: 2; }
+      .glow { filter: drop-shadow(0 0 18px rgba(34,211,238,0.12)); }
+    </style>
+  </defs>
+
+  <rect width="1600" height="980" fill="url(#bg)"/>
+  <rect width="1600" height="980" fill="url(#grid)" opacity="0.55"/>
+  <rect width="1600" height="980" fill="url(#glow)"/>
+
+  <text x="80" y="86" class="title">Open Design 架构图</text>
+  <text x="80" y="124" class="sub">本地优先的 AI 设计工作流：Web 前端 + 本地守护进程 + 你的 Agent CLI + 真实磁盘工作区</text>
+
+  <!-- Left: Users -->
+  <rect x="70" y="240" width="220" height="130" class="box" fill="rgba(30,41,59,0.56)" stroke="#94a3b8"/>
+  <text x="180" y="282" text-anchor="middle" class="label">用户</text>
+  <text x="180" y="312" text-anchor="middle" class="small">浏览器 / 桌面端</text>
+  <text x="180" y="340" text-anchor="middle" class="tiny">输入 brief · 选择技能 · 查看产物</text>
+
+  <!-- Top / Security -->
+  <rect x="70" y="420" width="220" height="110" class="box" fill="rgba(136,19,55,0.34)" stroke="#fb7185"/>
+  <text x="180" y="460" text-anchor="middle" class="label">BYOK / 安全边界</text>
+  <text x="180" y="490" text-anchor="middle" class="small">OpenAI / Anthropic / OpenAI-Compatible</text>
+  <text x="180" y="516" text-anchor="middle" class="tiny">拒绝内网 / loopback / RFC1918 目标</text>
+
+  <!-- Frontend -->
+  <rect x="360" y="200" width="330" height="190" class="box glow" fill="rgba(8,51,68,0.42)" stroke="#22d3ee"/>
+  <text x="525" y="244" text-anchor="middle" class="label">Web 前端</text>
+  <text x="525" y="277" text-anchor="middle" class="small">Next.js 16 · React 18 · TypeScript</text>
+  <text x="525" y="310" text-anchor="middle" class="small">聊天面板 · 文件工作区 · iframe 预览</text>
+  <text x="525" y="342" text-anchor="middle" class="small">设置 · 导入导出 · 模板库</text>
+  <text x="525" y="370" text-anchor="middle" class="chip">Vercel 可部署 / 静态资源友好</text>
+
+  <!-- Daemon -->
+  <rect x="760" y="190" width="360" height="210" class="box glow" fill="rgba(6,78,59,0.40)" stroke="#34d399"/>
+  <text x="940" y="238" text-anchor="middle" class="label">本地守护进程</text>
+  <text x="940" y="272" text-anchor="middle" class="small">Express + SQLite</text>
+  <text x="940" y="304" text-anchor="middle" class="small">/api/chat · /api/projects · /api/skills</text>
+  <text x="940" y="336" text-anchor="middle" class="small">/api/templates · /api/import/claude-design</text>
+  <text x="940" y="368" text-anchor="middle" class="chip">流式 SSE / 本地文件编排 / 持久化</text>
+
+  <!-- Storage -->
+  <rect x="760" y="470" width="360" height="170" class="box" fill="rgba(76,29,149,0.40)" stroke="#a78bfa"/>
+  <text x="940" y="514" text-anchor="middle" class="label">持久化层</text>
+  <text x="940" y="548" text-anchor="middle" class="small">.od/app.sqlite</text>
+  <text x="940" y="580" text-anchor="middle" class="small">.od/projects/&lt;id&gt;/</text>
+  <text x="940" y="612" text-anchor="middle" class="small">artifacts / tabs / templates / messages</text>
+
+  <!-- Agent CLI -->
+  <rect x="1220" y="190" width="320" height="210" class="box glow" fill="rgba(120,53,15,0.34)" stroke="#fbbf24"/>
+  <text x="1380" y="238" text-anchor="middle" class="label">Coding Agent CLI</text>
+  <text x="1380" y="272" text-anchor="middle" class="small">Claude · Codex · Gemini · Cursor</text>
+  <text x="1380" y="304" text-anchor="middle" class="small">OpenCode · Hermes · Qwen · Copilot</text>
+  <text x="1380" y="336" text-anchor="middle" class="small">自动 PATH 扫描 / 以当前可用 CLI 为引擎</text>
+  <text x="1380" y="368" text-anchor="middle" class="chip">SKILL.md + DESIGN.md 驱动渲染</text>
+
+  <!-- Skills -->
+  <rect x="1220" y="470" width="320" height="170" class="box" fill="rgba(15,23,42,0.55)" stroke="#64748b"/>
+  <text x="1380" y="514" text-anchor="middle" class="label">Skills / Design Systems</text>
+  <text x="1380" y="548" text-anchor="middle" class="small">31 个 Skill 目录</text>
+  <text x="1380" y="580" text-anchor="middle" class="small">129 套 Design System</text>
+  <text x="1380" y="612" text-anchor="middle" class="small">5 个视觉方向 / 93 个媒体模板</text>
+
+  <!-- Arrows -->
+  <path d="M290 305 C325 305, 332 305, 360 305" stroke="#22d3ee" stroke-width="3" fill="none" marker-end="url(#arrowCyan)"/>
+  <path d="M525 390 C525 455, 760 455, 760 305" stroke="#94a3b8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1120 305 C1160 305, 1180 305, 1220 305" stroke="#fbbf24" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M940 400 C940 430, 940 438, 940 470" stroke="#a78bfa" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M180 530 C180 660, 700 660, 760 560" stroke="#fb7185" stroke-width="2.5" fill="none" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+  <path d="M1380 400 C1380 440, 1380 452, 1380 470" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Bottom summary strip -->
+  <rect x="70" y="720" width="1470" height="180" rx="24" fill="rgba(15,23,42,0.62)" stroke="#1e293b" stroke-width="2"/>
+  <text x="105" y="770" class="label">核心循环</text>
+  <text x="105" y="808" class="small">1. 交互式问卷先锁定方向 → 2. 选择视觉风格 / Design System → 3. Agent 读取 Skills 与本地文件 → 4. 生成 HTML 制品 → 5. 产物可导出 / 可继续编辑</text>
+  <text x="105" y="844" class="small">本地优先、可替换 Agent、可替换模型、可替换设计系统；适合原型、网页、Deck、图片和短视频生产。</text>
+  <text x="105" y="882" class="tiny">Open Design · Apache-2.0 · local-first · BYOK fallback · one project = one workspace</text>
+</svg>
