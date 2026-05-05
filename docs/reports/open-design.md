@@ -96,6 +96,34 @@ Anthropic 在 2026 年 4 月 17 日发布了 Claude Design，用 Opus 4.7 驱动
 
 ---
 
+## 文件格式支持
+
+OD 的 Agent 在运行时读写真实磁盘文件，最终产出的成果物覆盖多种格式：
+
+**Agent 产出物（输出）：**
+
+| 格式 | 使用场景 | 驱动方式 |
+|------|---------|---------|
+| **HTML** | 落地页、Dashboard、手机原型、文档页 | 所有 `prototype` 模式 Skill |
+| **PNG / JPG** | 海报、信息图、头像、产品图 | 调用 gpt-image-2 |
+| **MP4** | 15s 短片、产品发布片、数据动画、TikTok 竖屏 | Seedance 2.0 / HyperFrames |
+| **PDF** | 导出 / 归档 | 浏览器 Print（headless Chrome） |
+| **PPTX** | 幻灯片 / 演讲 Deck | Agent 通过 Deck Skill 驱动 |
+| **ZIP** | 项目打包导出 | Archiver |
+| **Markdown** | 规约 / 规范 / 文档 | Agent 直接写入 |
+
+**支持导入的格式：**
+
+| 来源 | 格式 | 说明 |
+|------|------|------|
+| Claude Design 导出 | ZIP | `POST /api/import/claude-design` 解包为 .od 项目，Agent 可从中断处继续编辑 |
+| Design System | Markdown（DESIGN.md） | 129 套，切换仅需一个 Dropdown |
+| Skill | SKILL.md + assets/ | 丢文件夹进 `skills/` 即出现 |
+
+**明确不支持：** Figma（.fig）、Sketch（.sketch）、XD（.xd）、Photoshop（.psd）等设计源文件导入。OD 走的路线是 **prompt → HTML**，不是 **上传设计稿 → 还原 HTML**。如果你需要后一种能力，Anima、Zeplin、Locofy、Builder.io 更合适。
+
+---
+
 ## 媒体生成：不止代码，还出图出视频
 
 在同一个聊天面板里，Agent 还可以驱动三种媒体生成模型：
